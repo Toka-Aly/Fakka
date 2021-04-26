@@ -1,0 +1,438 @@
+@media all and (max-width: 768px) {
+    .sign-in {
+        .container {
+            .sign-body {
+                .fields {
+                    .field {
+                        .input {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .products-details {
+        .details {
+            .item {
+                .certification-info {
+                    .certification-head {
+                        margin-bottom: 0;
+                        .input {
+                            font-size: 35px;
+                        }
+                        label {
+                            font-size: 15px;
+                        }
+                    }
+                    .certification-body {
+                        .input {
+                            font-size: 20px;
+                        }
+                        .grid-container {
+                            grid-gap: 44px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .virtual-gold {
+        .tabs {
+            .tab {
+                .details {
+                    display: block;
+                    .personal-details {
+                        padding-left: 0;
+                        padding-top: 50px;
+                    }
+                    .certificate {
+                        .item {
+                            .certification-info {
+                                .certification-head {
+                                    margin-bottom: 0;
+                                    .input {
+                                        font-size: 35px;
+                                    }
+                                    label {
+                                        font-size: 15px;
+                                    }
+                                }
+                                .certification-body {
+                                    .input {
+                                        font-size: 20px;
+                                    }
+                                    .grid-container {
+                                        grid-gap: 44px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #second {
+                        >div {
+                            display: block;
+                            .order {
+                                margin-left: 0;
+                                width: 100%;
+                                margin-top: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    [dir="rtl"] .virtual-gold {
+        .tabs {
+            .tab {
+                .details {
+                    .personal-details {
+                        padding: 0;
+                        padding-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+    [dir="rtl"] .confirm-payment {
+        .container {
+            .right-side {
+                margin: 0;
+            }
+        }
+    }
+    main {
+        .products {
+            .grid-container {
+                grid-template-columns: auto auto;
+            }
+        }
+    }
+    [dir="rtl"] .virtual-gold {
+        .tabs {
+            #second {
+                >div {
+                    display: block;
+                    .order {
+                        margin: 0;
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 375px) {
+    .confirm-payment {
+        .container {
+            .payment-tabs {
+                .payment-methods {
+                    display: block;
+                }
+            }
+        }
+    }
+    .accordion {
+        .accordion-section {
+            .list {
+                display: block;
+                .btn {
+                    margin: 0;
+                    margin-top: 50px;
+                }
+                .dropdown {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .topbar {
+        .container {
+            .right-side {
+                margin-top: 15px;
+            }
+        }
+    }
+    .background-title {
+        .title {
+            font-size: 30px;
+            left: 65%;
+        }
+    }
+    [dir="rtl"] .confirm-payment {
+        .container {
+            .fields {
+                .two-fields {
+                    .field {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .products-details {
+        .details {
+            .certification {
+                display: block;
+                text-align: center;
+            }
+            .item {
+                .certification-info {
+                    .certification-head {
+                        margin-bottom: 0;
+                        .input {
+                            font-size: 20px;
+                        }
+                    }
+                    .certification-body {
+                        span,
+                        label {
+                            font-size: 10px;
+                        }
+                        .input {
+                            font-size: 10px;
+                        }
+                        .grid-container {
+                            grid-gap: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tabs-form {
+        .container {
+            .btn {
+                font-size: 15px;
+            }
+        }
+    }
+    .tabs-contents {
+        .tabcontent {
+            .details {
+                .fields {
+                    .two-fields {
+                        display: block;
+                        .field {
+                            margin: 0;
+                        }
+                    }
+                }
+                .preference {
+                    .img-section {
+                        .content {
+                            .changeable {
+                                display: block;
+                                .outline-red {
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #Tab2 {
+            .details {
+                .vertical-tabs {
+                    #vertical_tab_nav {
+                        .vertical-links {
+                            .link {
+                                a {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                    .balance {
+                        .store {
+                            .block-head {
+                                display: block;
+                            }
+                            .grid-container {
+                                grid-template-columns: auto;
+                            }
+                        }
+                        .wallet-content {
+                            .fields {
+                                .list {
+                                    display: block;
+                                    .dropdown {
+                                        width: 100%;
+                                    }
+                                    .btn {
+                                        margin-top: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .points {
+                            .gifts {
+                                .grid-container {
+                                    grid-template-columns: auto;
+                                    margin-bottom: 50px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .certifications {
+        .grid-container {
+            grid-template-columns: auto;
+        }
+    }
+    .page-heading {
+        .container {
+            .steps {
+                .step {
+                    p {
+                        padding-right: 15px;
+                        font-size: 14px;
+                        span {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .virtual-gold {
+        .tabs {
+            .tab {
+                .details {
+                    display: block;
+                    .gold-details {
+                        padding: 0;
+                    }
+                    .certificate {
+                        .item {
+                            .certification-info {
+                                .certification-head {
+                                    margin-bottom: 0;
+                                    .input {
+                                        font-size: 11px;
+                                    }
+                                    label {
+                                        font-size: 11px;
+                                    }
+                                }
+                                .certification-body {
+                                    .input {
+                                        font-size: 11px;
+                                    }
+                                    .grid-container {
+                                        grid-gap: 0;
+                                        padding-top: 0;
+                                    }
+                                    span,
+                                    label {
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .fields {
+                    .two-fields {
+                        display: block;
+                        margin-bottom: 15px;
+                        p {
+                            margin-top: 50px;
+                        }
+                        .field {
+                            margin-right: 0;
+                            input:read-only {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .field {
+                        span {
+                            font-size: 15px;
+                        }
+                        .input::placeholder {
+                            font-size: 11px;
+                        }
+                        [dir="rtl"] .input::placeholder {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            #second {
+                >div {
+                    display: block;
+                    .order {
+                        margin-left: 0;
+                        width: 100%;
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+    [dir="rtl"] .background-title {
+        .title {
+            font-size: 30px;
+            left: 100%;
+        }
+    }
+    [dir="rtl"] .heading {
+        .right-side {
+            .blue-btn {
+                font-size: 20px;
+            }
+        }
+    }
+    .tabs-contents {
+        .tabcontent {
+            .details {
+                .preference {
+                    .card {
+                        .content {
+                            .saved-cards {
+                                .field {
+                                    .btn {
+                                        width: 100px;
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .address {
+                        .content {
+                            .field {
+                                .btn {
+                                    width: 100px;
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    [dir="rtl"] .virtual-gold {
+        .tabs {
+            .tab {
+                .fields {
+                    .field {
+                        .input::placeholder {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

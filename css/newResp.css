@@ -1,0 +1,68 @@
+@media all and (max-width: 411px) {
+    main .products .grid-container {
+        grid-template-columns: auto;
+    }
+    .banner .container {
+        transform: translate(-20%, -50%);
+    }
+    main .own-ingots .container p {
+        max-width: 400px;
+    }
+    main .own-ingots .container {
+        width: 400px;
+    }
+    header {
+        top: 78px;
+    }
+    .confirm-payment .container .fields .two-fields {
+        display: block;
+    }
+    .confirm-payment .container .payment-tabs .payment_methods {
+        display: block;
+    }
+}
+
+@media all and (max-width: 414px) {
+    .confirm-payment .container .fields .two-fields {
+        display: block;
+    }
+    .confirm-payment .container .payment-tabs .payment_methods {
+        display: block;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .banner .container {
+        transform: translate(-43%, -50%);
+    }
+    main .own-ingots .container {
+        width: 900px;
+    }
+}
+
+@media all and (max-width: 540px) {
+    main .products .grid-container {
+        grid-template-columns: auto;
+    }
+    main .own-ingots .container {
+        width: 500px;
+    }
+    .banner .container {
+        transform: translate(-23%, -50%);
+    }
+}
+
+@media all and (max-width: 280px) {
+    .banner .container {
+        width: 300px;
+    }
+    .banner .container .ratio>div {
+        width: 258px;
+    }
+    main .own-ingots .container {
+        width: 275px;
+    }
+    main .products .btn {
+        width: auto;
+    }
+}

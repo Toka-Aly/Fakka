@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Payment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnec    t" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="scss/custom.css"> -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/arabic rtl.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container">
+            <div class="social">
+                <a href="">
+                    <figure>
+                        <svg viewBox="0 0 23.469 23.469">
+                            <use xlink:href="images/sprite.svg#fb"></use>
+                        </svg>
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
+                        <svg viewBox="0 0 23.075 23.075">
+                            <use xlink:href="images/sprite.svg#linkedin"></use>
+                        </svg>
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
+                        <svg viewBox="0 0 23.1 23.1">
+                            <use xlink:href="images/sprite.svg#insta"></use>
+                        </svg>
+                    </figure>
+                </a>
+                <a href="">
+                    <figure>
+                        <svg viewBox="0 0 32.999 23">
+                            <use xlink:href="images/sprite.svg#youtube"></use>
+                        </svg>
+                    </figure>
+                </a>
+            </div>
+            <div class="right-side">
+                <div class="language">
+                    <select name="" id="" class="dropdown">
+                        <option value="">
+                            Language
+                        </option>
+                        <option value="">
+                            AR
+                        </option>
+                        <option value="">
+                            EN
+                        </option>
+                    </select>
+                </div>
+                <div class="login">
+                    <a href="http://127.0.0.1:5500/register.html">
+                        Login / register
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a href="#">
+                    <figure>
+                        <img src="images/logo.png" alt="">
+                    </figure>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-area cart">
+                    <a class="menu" id="menu" onclick="showDropdownMenu() ">
+                        <figure>
+                            <svg viewBox="0 0 22.5 20.622">
+                                <use xlink:href="images/sprite.svg#add-to-cart"></use>
+                            </svg>
+                        </figure>
+                        <span class="count">10</span> cart
+                    </a>
+
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <div class="confirm-payment">
+            <div class="background-title">
+                <figure>
+                    <img src="images/shopping-bg.svg" alt="">
+                </figure>
+                <div class="title">
+                    <h2>
+                        Confirm Payment
+                    </h2>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <div class="payment-tabs">
+                        <h4>
+                            Payment Method
+                        </h4>
+                        <div class="payment-methods">
+                            <div class="field">
+                                <label>
+                                    <input type="radio" name="delivery_type" value="keep_in_store" checked />
+                                    <span>Keep in Store</span>
+                                </label>
+                            </div>
+                            <div class="field">
+                                <label>
+                                    <input type="radio" name="delivery_type" value="ship" />
+                                    <span>Ship</span>
+                                    <input type="text" class="">
+                                </label>
+
+                            </div>
+                            <div class="field">
+                                <label>
+                                    <input type="radio" name="delivery_type" value="pick_up" />
+                                    <span>Pick Up</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div id="deliver_by_shipping" class="ship">
+                            <label for="">
+                                Shipping Address
+                            </label>
+                            <input class="input input-custom" type="text" placeholder="Your available address">
+                            <button class="btn outline-btn">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                    <div class="accordions">
+                        <h4>
+                            Payment Method
+                        </h4>
+                        <div class="accordion">
+                            <div class="accordion-section">
+                                <div class="title active">
+                                    <h3>
+                                        Wallet
+                                    </h3>
+                                </div>
+                                <div class="add">
+                                    <a href="" class="btn outline-btn">
+                                        Add to Wallet
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="fields">
+                                        <div class="two-fields">
+                                            <div class="field">
+                                                <label for="">
+                                                    Balance
+                                                </label>
+                                                <span class="sub-label">
+                                                    Available
+                                                </span>
+                                                <input class="input input-custom " type="number" name="" id="" value="23444" readonly>
+                                                <span>
+                                                    EGP
+                                                </span>
+                                            </div>
+                                            <div class="field">
+                                                <label for="">
+                                                    Remain
+                                                </label>
+                                                <span class="sub-label">
+                                                    Will Be Available
+                                                </span>
+                                                <input class="input input-custom " type="number" name="" id="" value="23444" readonly>
+                                                <span>
+                                                    EGP
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <label for="">
+                                                Pass Code
+                                            </label>
+                                            <span class="sub-label">
+                                                Required
+                                            </span>
+                                            <input class="input input-custom " type="text" name="" id="" placeholder="Enter security code">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-section">
+                                <div class="title">
+                                    <h3>
+                                        Mastercard
+                                    </h3>
+                                </div>
+                                <div class="content">
+                                    <div class="fields">
+                                        <div class="field list">
+                                            <label for="">
+                                                Select current card
+                                            </label>
+                                            <select class="dropdown" name="" id="">
+                                                <option value="">
+                                                    2134 **** **** 1124
+                                                </option>
+                                            </select>
+                                            <button class="btn blue-btn" data-toggle="modal" data-target="addcard4_popup">Add New Card</button>
+                                        </div>
+                                        <div class="field">
+                                            <label for="">
+                                                CVV
+                                            </label>
+                                            <span class="sub-label">
+                                                Required
+                                            </span>
+                                            <input class="input input-custom " type="password" name="" id="" placeholder="***">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-section">
+                                <div class="title">
+                                    <h3>
+                                        Visa
+                                    </h3>
+                                </div>
+                                <div class="content">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn blue-btn">
+                            Confirm
+                        </button>
+
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="checkout">
+                        <h4>
+                            Total
+                        </h4>
+                        <div class="details">
+                            <ul>
+                                <li>
+                                    <p>
+                                        items
+                                    </p>
+                                    <span>
+                                        2
+                                    </span>
+                                </li>
+                                <li>
+                                    <p>
+                                        Cost
+                                    </p>
+                                    <span>
+                                        3234 EGP
+                                    </span>
+                                </li>
+                                <li>
+                                    <p>
+                                        Shipping
+                                    </p>
+                                    <span>
+                                        0 EGP
+                                    </span>
+                                </li>
+                                <li class="total">
+                                    <p>
+                                        Total
+                                    </p>
+                                    <span>
+                                        3234 EGP
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="shopping-cart">
+                        <div class="cart-items">
+                            <h4>
+                                Order Overview
+                            </h4>
+                            <div class="items">
+                                <div class="item">
+                                    <div class="item-details">
+                                        <div class="order-img">
+                                            <figure>
+                                                <img src="images/6.jpeg" alt="">
+                                            </figure>
+                                        </div>
+
+                                        <div class="info">
+                                            <h4>
+                                                10 gram BTC Gold 24k
+                                            </h4>
+                                            <div class="grid-container">
+                                                <div class="grid-item">
+                                                    <p>
+                                                        Category: <span>
+                                                            Ingots
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="grid-item">
+                                                    <p>
+                                                        Price per gram: <span>
+                                                            20EGP
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="grid-item">
+                                                    <p>
+                                                        Product weight: <span>
+                                                            10 gm
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="quantity">
+                                        <div class="quantity-control" data-quantity="">
+                                            <span>
+                                                2
+                                            </span>
+                                        </div>
+                                        <h4>
+                                            9200
+                                        </h4>
+                                        <button class="btn red-btn">
+                                            Remove
+                                        </button>
+
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="item-details">
+                                        <div class="order-img">
+                                            <figure>
+                                                <img src="images/6.jpeg" alt="">
+                                            </figure>
+                                        </div>
+
+                                        <div class="info">
+                                            <h4>
+                                                10 gram BTC Gold 24k
+                                            </h4>
+                                            <div class="grid-container">
+                                                <div class="grid-item">
+                                                    <p>
+                                                        Category: <span>
+                                                            Ingots
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="grid-item">
+                                                    <p>
+                                                        Price per gram: <span>
+                                                            20EGP
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="grid-item">
+                                                    <p>
+                                                        Product weight: <span>
+                                                            10 gm
+                                                        </span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="quantity">
+                                        <div class="quantity-control" data-quantity="">
+                                            <span>
+                                                2
+                                            </span>
+                                        </div>
+                                        <h4>
+                                            9200
+                                        </h4>
+                                        <button class="btn red-btn">
+                                            Remove
+                                        </button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="container">
+                <div class="title">
+                    <h2>
+                        We will be happy
+                    </h2>
+                </div>
+                <p>
+                    To answer all your questions
+                </p>
+                <a href="">
+                    Contact us
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="columns">
+                <div class="logo">
+                    <figure>
+                        <img src="images/footer.png" alt="">
+                    </figure>
+                </div>
+                <div>
+                    <h4>Categories</h4>
+                    <ul>
+                        <li>
+                            <a href="">Ingots</a>
+                        </li>
+                        <li>
+                            <a href="">Coins</a>
+                        </li>
+                        <li>
+                            <a href="">Bars</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact info</h4>
+                    <ul>
+                        <li>
+                            <a href="">Management: +3727124420</a>
+                        </li>
+                        <li>
+                            <a href="">Support: +201007890373</a>
+                        </li>
+                        <li>
+                            <a href="">Email: info@fakka.org</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Social media</h4>
+                    <div class="social">
+
+                        <a href="">
+                            <figure>
+                                <svg viewBox="0 0 23.469 23.469">
+                                    <use xlink:href="images/sprite.svg#fb"></use>
+                                </svg>
+                            </figure>
+                        </a>
+                        <a href="">
+                            <figure>
+                                <svg viewBox="0 0 23.075 23.075">
+                                    <use xlink:href="images/sprite.svg#linkedin"></use>
+                                </svg>
+                            </figure>
+                        </a>
+                        <a href="">
+                            <figure>
+                                <svg viewBox="0 0 23.1 23.1">
+                                    <use xlink:href="images/sprite.svg#insta"></use>
+                                </svg>
+                            </figure>
+                        </a>
+                        <a href="">
+                            <figure>
+                                <svg viewBox="0 0 32.999 23">
+                                    <use xlink:href="images/sprite.svg#youtube"></use>
+                                </svg>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrights">
+                <p>
+                    @ Copyright 2019 - 2020 | Fakka.org by Fakka OU | All rights reserved | Powered transglobal llc
+                </p>
+                <div>
+                    <a href="">
+                        Terms and Conditions
+                    </a>
+                    <a href="">
+                        Privacy policy
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup" id="addcard4_popup">
+        <div class="popup_main">
+            <div class="popup_body">
+                <div class="popup_back">
+                    <div class="popup_contain addcard-popup">
+                        <h2>
+                            Add new card
+                        </h2>
+                        <div class="two-fields">
+                            <div class="field">
+                                <label for="">
+                                    Name On Card
+                                </label>
+                                <span class="sub-label">
+                                    Required
+                                </span>
+                                <input class="input input-custom " type="text" placeholder=" Eg, Mansour ali ">
+                            </div>
+                            <div class="field ">
+                                <label for=" ">
+                                    Card Number
+                                </label>
+                                <span class="sub-label ">
+                                    Required
+                                </span>
+                                <input class="input input-custom " type="number " placeholder="**** **** **** **** ">
+                            </div>
+                        </div>
+                        <div class="three-fields">
+                            <div class="date">
+                                <label for="">
+                                    Expiration date
+                                </label>
+                                <div class="field">
+                                    <input class="input input-custom small-field" type="number" placeholder="DD">
+                                </div>
+                                <div class="field">
+                                    <input class="input input-custom small-field" type="number" placeholder="MM">
+                                </div>
+                                <div class="field">
+                                    <input class="input input-custom big-field" type="number" placeholder="YYYY">
+                                    <span class="sub-label">
+                                        Required
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn blue-btn small" data-modal-dismiss>
+                            Add</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/customScript.js"></script>
+    <script src="js/slick.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+.btn {
+    outline: 0;
+    border: 0;
+    background: none;
+    padding: 0;
+    -webkit-appearance: none;
+    height: 60px;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.blue-btn {
+    background: $primaryColor;
+    color: white;
+}
+
+.outline-btn {
+    border: 1px solid $primaryColor;
+    color: $primaryColor;
+}
+
+.outline-red {
+    border: 1px solid#E62727;
+    color: #e62727;
+}
+
+.white-btn {
+    background: white;
+    color: $primaryColor;
+}
+
+.red-btn {
+    background: #e62727;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
