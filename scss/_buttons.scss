@@ -14,13 +14,27 @@
 }
 
 .blue-btn {
-    background: $primaryColor;
     color: white;
+    background: $primaryColor;
+    border: 1px solid transparent;
+    transition: .5s;
+    &:hover {
+        border: 1px solid $primaryColor;
+        color: $primaryColor;
+        background: transparent;
+    }
 }
 
 .outline-btn {
     border: 1px solid $primaryColor;
     color: $primaryColor;
+    background: transparent;
+    transition: .5s;
+    &:hover {
+        color: white;
+        background: $primaryColor;
+        border: 1px solid transparent;
+    }
 }
 
 .outline-red {
@@ -31,6 +45,13 @@
 .white-btn {
     background: white;
     color: $primaryColor;
+    border: 1px solid transparent;
+    transition: .5s;
+    &:hover {
+        border: 1px solid white;
+        color: white;
+        background: transparent;
+    }
 }
 
 .red-btn {

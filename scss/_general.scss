@@ -7,7 +7,7 @@ body {
     font-weight: 400;
     line-height: 1.4;
     zoom: 0.9;
-    padding-top: 250px;
+    padding-top: 180px;
     [dir="rtl"] & {
         padding-top: 164px;
     }
@@ -38,19 +38,10 @@ a {
 }
 
 .title {
-    font-size: 82px;
-    font-weight: 700;
-    @media all and (max-width: 768px) {
-        font-size: 50px;
-    }
-    h2 {
-        color: white;
-    }
+    color: white;
 }
 
 .subtitle {
-    font-size: 40px;
-    font-weight: 600;
     color: $primaryColor;
 }
 
@@ -76,6 +67,9 @@ a {
 .background-title {
     position: relative;
     z-index: 0;
+    figure {
+        margin: 0;
+    }
     .title {
         position: absolute;
         transform: translate(-50%, -50%);
@@ -84,9 +78,9 @@ a {
         top: 50%;
         left: 45%;
         text-align: left;
-        @media all and (max-width: 768px) {
-            width: 500px;
-            left: 35%;
+        h2 {
+            font-size: 82px;
+            font-weight: 600;
         }
     }
 }
@@ -100,121 +94,6 @@ a {
     font-family: "Poppins", sans-serif;
     width: 100%;
     background: url(../images/card-arrow.svg) no-repeat right 13px center;
-}
-
-.accordion {
-    text-align: left;
-    padding-top: 30px;
-    [dir="rtl"] & {
-        text-align: right;
-    }
-    .accordion-section {
-        margin-bottom: 20px;
-        position: relative;
-        &:last-child {
-            margin-bottom: 0;
-        }
-        .title {
-            font-size: 20px;
-            font-weight: 300;
-            color: #015cab;
-            background: #f5f5f5;
-            border: 1px solid #bfbfbf;
-            padding: 16px 0;
-            padding-left: 65px;
-            position: relative;
-            border-radius: 10px;
-            [dir="rtl"] & {
-                padding-left: 0;
-                padding-right: 65px;
-            }
-            &::before {
-                content: "";
-                background: none;
-                position: absolute;
-                width: 21px;
-                height: 21px;
-                border: 2px solid #707070;
-                border-radius: 50%;
-                top: 16px;
-                left: 20px;
-                [dir="rtl"] & {
-                    right: 20px;
-                    left: 0;
-                }
-            }
-        }
-        .title.active::after {
-            content: "";
-            display: block;
-            background: $primaryColor;
-            width: 11px;
-            height: 11px;
-            position: absolute;
-            border-radius: 50%;
-            top: 21px;
-            left: 25px;
-            [dir="rtl"] & {
-                right: 25px;
-                left: 0;
-            }
-        }
-        .add {
-            position: absolute;
-            top: 0;
-            right: 0;
-            [dir="rtl"] & {
-                right: auto;
-                left: 0;
-            }
-            .btn {
-                width: 163px;
-                font-size: 18px;
-                background: white;
-                padding: 30px 0;
-                border-radius: 10px;
-                color: $primaryColor;
-                font-weight: 300;
-            }
-        }
-        .list {
-            display: flex;
-            align-items: center;
-            .dropdown {
-                width: 430px;
-                border: 1px solid #bfbfbf;
-                border-radius: 6px;
-                height: 60px;
-                padding-left: 15px;
-                align-items: center;
-                color: $primaryColor;
-                font-size: 20px;
-                [dir="rtl"] & {
-                    background: url(../images/card-arrow.svg) no-repeat left 13px center;
-                    padding-left: 0;
-                    padding-right: 15px;
-                }
-                [dir="rtl"] & {
-                    margin-left: 0;
-                }
-            }
-            .btn {
-                margin: 0;
-                margin-left: auto;
-                width: 231px;
-                margin-left: 18px;
-                font-size: 24px;
-                [dir="rtl"] & {
-                    margin-left: 0;
-                    margin-right: 18px;
-                }
-            }
-        }
-    }
-}
-
-.accordion .accordion-section:not(:first-of-type) .content {
-    display: none;
 }
 
 .topbar {
