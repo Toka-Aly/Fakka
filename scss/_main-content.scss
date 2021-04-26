@@ -493,6 +493,9 @@ main {
     padding-top: 47px;
     padding-bottom: 115px;
     text-align: left;
+    .card-body {
+        padding: 0;
+    }
     .accordion {
         text-align: left;
         padding-top: 30px;
@@ -503,18 +506,17 @@ main {
                 margin-bottom: 0;
             }
             .title {
-                font-size: 20px;
-                font-weight: 300;
                 color: #015cab;
                 background: #f5f5f5;
                 border: 1px solid #bfbfbf;
-                padding: 16px 0;
+                padding: 18px 0;
                 padding-left: 65px;
                 position: relative;
                 border-radius: 10px;
-                [dir="rtl"] & {
-                    padding-left: 0;
-                    padding-right: 65px;
+                h3 {
+                    font-size: 20px;
+                    font-weight: 300;
+                    margin: 0;
                 }
                 &::before {
                     content: "";
@@ -1506,54 +1508,6 @@ main {
                             }
                         }
                     }
-                    .quantity {
-                        margin-left: auto;
-                        text-align: right;
-                        [dir="rtl"] & {
-                            margin-right: auto;
-                            margin-left: 0;
-                        }
-                        @media all and (max-width: 375px) {
-                            margin: 0;
-                            text-align: left;
-                        }
-                        .red-btn {
-                            width: 134px;
-                            margin: inherit;
-                            margin-top: 20px;
-                            font-size: 24px;
-                        }
-                        .quantity-control {
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                            width: fit-content;
-                            margin: 0 auto;
-                            border: 1px solid $primaryColor;
-                            border-radius: 6px;
-                            width: 152px;
-                            height: 45px;
-                            margin-bottom: 20px;
-                            @media all and (max-width: 375px) {
-                                margin: 0;
-                                margin-top: 15px;
-                                margin-bottom: 15px;
-                            }
-                        }
-                        .quantity-btn {
-                            background: transparent;
-                            border: none;
-                            outline: none;
-                            margin: 0;
-                            padding: 0px 15px;
-                            cursor: pointer;
-                        }
-                        .quantity-btn svg {
-                            width: 15px;
-                            height: 15px;
-                            fill: $primaryColor;
-                        }
-                    }
                 }
             }
         }
@@ -2429,7 +2383,7 @@ main {
                     .buttons {
                         flex-direction: column;
                         position: absolute;
-                        top: 32px;
+                        top: 20px;
                         right: 0;
                         border-left: 1px solid #bfbfbf;
                         height: 60px;

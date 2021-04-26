@@ -40,6 +40,13 @@
 .outline-red {
     border: 1px solid#E62727;
     color: #e62727;
+    background: none;
+    transition: .5s;
+    &:hover {
+        border: 1px solid transparent;
+        background: #e62727;
+        color: white;
+    }
 }
 
 .white-btn {

@@ -13,6 +13,10 @@ body {
     }
 }
 
+figure {
+    margin: 0;
+}
+
 .container {
     max-width: 1450px;
     margin: 0 auto;
@@ -102,7 +106,7 @@ a {
     background: #f5f5f5;
     z-index: 99999;
     top: 0;
-    padding: 15px 0;
+    padding: 24px 0;
     display: inline-block;
     align-items: center;
     [dir="rtl"] & {

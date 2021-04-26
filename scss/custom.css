@@ -109,6 +109,10 @@ body {
   padding-top: 164px;
 }
 
+figure {
+  margin: 0;
+}
+
 .container {
   max-width: 1450px;
   margin: 0 auto;
@@ -207,7 +211,7 @@ a {
   background: #f5f5f5;
   z-index: 99999;
   top: 0;
-  padding: 15px 0;
+  padding: 24px 0;
   display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -501,6 +505,15 @@ header {
 .outline-red {
   border: 1px solid #E62727;
   color: #e62727;
+  background: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.outline-red:hover {
+  border: 1px solid transparent;
+  background: #e62727;
+  color: white;
 }
 
 .white-btn {
@@ -1354,6 +1367,10 @@ main .contact h2 {
   text-align: left;
 }
 
+.virtual-gold .card-body {
+  padding: 0;
+}
+
 .virtual-gold .accordion {
   text-align: left;
   padding-top: 30px;
@@ -1369,20 +1386,19 @@ main .contact h2 {
 }
 
 .virtual-gold .accordion .accordion-section .title {
-  font-size: 20px;
-  font-weight: 300;
   color: #015cab;
   background: #f5f5f5;
   border: 1px solid #bfbfbf;
-  padding: 16px 0;
+  padding: 18px 0;
   padding-left: 65px;
   position: relative;
   border-radius: 10px;
 }
 
-[dir="rtl"] .virtual-gold .accordion .accordion-section .title {
-  padding-left: 0;
-  padding-right: 65px;
+.virtual-gold .accordion .accordion-section .title h3 {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
 }
 
 .virtual-gold .accordion .accordion-section .title::before {
@@ -2785,74 +2801,6 @@ main .contact h2 {
   color: black;
 }
 
-.shopping-cart .container .cart-items .items .item .quantity {
-  margin-left: auto;
-  text-align: right;
-}
-
-[dir="rtl"] .shopping-cart .container .cart-items .items .item .quantity {
-  margin-right: auto;
-  margin-left: 0;
-}
-
-@media all and (max-width: 375px) {
-  .shopping-cart .container .cart-items .items .item .quantity {
-    margin: 0;
-    text-align: left;
-  }
-}
-
-.shopping-cart .container .cart-items .items .item .quantity .red-btn {
-  width: 134px;
-  margin: inherit;
-  margin-top: 20px;
-  font-size: 24px;
-}
-
-.shopping-cart .container .cart-items .items .item .quantity .quantity-control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
-  border: 1px solid #015CAB;
-  border-radius: 6px;
-  width: 152px;
-  height: 45px;
-  margin-bottom: 20px;
-}
-
-@media all and (max-width: 375px) {
-  .shopping-cart .container .cart-items .items .item .quantity .quantity-control {
-    margin: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-}
-
-.shopping-cart .container .cart-items .items .item .quantity .quantity-btn {
-  background: transparent;
-  border: none;
-  outline: none;
-  margin: 0;
-  padding: 0px 15px;
-  cursor: pointer;
-}
-
-.shopping-cart .container .cart-items .items .item .quantity .quantity-btn svg {
-  width: 15px;
-  height: 15px;
-  fill: #015CAB;
-}
-
 .checkout {
   margin-left: auto;
   width: 346px;
@@ -4052,7 +4000,7 @@ main .contact h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  top: 32px;
+  top: 20px;
   right: 0;
   border-left: 1px solid #bfbfbf;
   height: 60px;
@@ -4504,7 +4452,6 @@ main .contact h2 {
 
 .tabs-contents .tabcontent .details .preference .img-section .content .changeable .btn {
   width: 146px;
-  background: white;
   margin-right: 20px;
 }
 
@@ -4525,11 +4472,7 @@ main .contact h2 {
   top: 0;
   right: 0;
   width: 133px;
-}
-
-[dir="rtl"] .tabs-contents .tabcontent .details .preference .card .content .saved-cards .field .btn {
-  right: auto;
-  left: 0;
+  padding: 32px 0;
 }
 
 .tabs-contents .tabcontent .details .preference .card .content .saved-cards .field .input {
@@ -4551,6 +4494,7 @@ main .contact h2 {
   top: 0;
   right: 0;
   width: 133px;
+  padding: 32px 0;
 }
 
 [dir="rtl"] .tabs-contents .tabcontent .details .preference .address .content .field .btn {
@@ -5215,6 +5159,39 @@ main .contact h2 {
 
 .addcard-popup .buttons .btn {
   margin-left: 10px;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list .dropdown {
+  width: 325px;
+  border: 1px solid #bfbfbf;
+  border-radius: 6px;
+  height: 60px;
+  padding-left: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #015CAB;
+  font-size: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+[dir="rtl"] .list .dropdown {
+  background: url(../images/card-arrow.svg) no-repeat left 13px center;
+}
+
+.list .btn {
+  margin: 0;
+  width: 231px;
+  margin-left: 18px;
+  font-size: 24px;
 }
 
 footer {

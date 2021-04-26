@@ -1,230 +1,203 @@
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 0 30px;
-        padding-top: 20px;
-    }
-    
-    .tabs-form {
-        overflow: hidden;
-        background-color: #f5f5f5;
-        .container {
-            display: flex;
-            .btn {
-                float: left;
-                cursor: pointer;
-                transition: 0.3s;
-                font-size: 24px;
-                color: $primaryColor;
-                margin-right: 60px;
-                background-color: none;
-                border-radius: 0;
-                width: auto;
-                height: 88px;
-                border-bottom: 2px solid transparent;
-                [dir="rtl"] & {
-                    margin-right: 0;
-                    margin-left: 60px;
-                }
-                 :last-child {
-                    margin-right: 0;
-                }
-                &.active {
-                    border-bottom: 2px solid $primaryColor;
-                }
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0 30px;
+    padding-top: 20px;
+}
+
+.tabs-form {
+    overflow: hidden;
+    background-color: #f5f5f5;
+    .container {
+        display: flex;
+        .btn {
+            float: left;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 24px;
+            color: $primaryColor;
+            margin-right: 60px;
+            background-color: none;
+            border-radius: 0;
+            width: auto;
+            height: 88px;
+            border-bottom: 2px solid transparent;
+            [dir="rtl"] & {
+                margin-right: 0;
+                margin-left: 60px;
+            }
+             :last-child {
+                margin-right: 0;
+            }
+            &.active {
+                border-bottom: 2px solid $primaryColor;
             }
         }
     }
-    
-    .tabs-contents {
-        padding-top: 60px;
-        padding-bottom: 100px;
-        .tabcontent {
-            text-align: left;
-            display: block;
-            [dir="rtl"] & {
-                text-align: right;
+}
+
+.tabs-contents {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    .tabcontent {
+        text-align: left;
+        display: block;
+        [dir="rtl"] & {
+            text-align: right;
+        }
+        .input {
+            &:read-only {
+                color: $primaryColor;
             }
-            .input {
-                &:read-only {
-                    color: $primaryColor;
-                }
+        }
+        .details {
+            display: flex;
+            @media all and (max-width: 768px) {
+                display: block;
             }
-            .details {
-                display: flex;
-                @media all and (max-width: 768px) {
-                    display: block;
-                }
-                h4 {
-                    color: $primaryColor;
-                    font-size: 24px;
-                }
-                .fields {
-                    padding-top: 30px;
-                    .field {
+            h4 {
+                color: $primaryColor;
+                font-size: 24px;
+            }
+            .fields {
+                padding-top: 30px;
+                .field {
+                    position: relative;
+                    font-weight: 300;
+                    padding: 30px 0;
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+                    label {
+                        position: absolute;
+                        font-size: 18px;
+                        color: #070707;
+                        top: 0;
+                    }
+                    .input {
+                        height: 60px;
+                        padding-left: 15px;
                         position: relative;
-                        font-weight: 300;
-                        padding: 30px 0;
-                        &:last-child {
-                            padding-bottom: 0;
+                        [dir="rtl"] & {
+                            padding-left: 0;
+                            padding-right: 15px;
                         }
-                        label {
-                            position: absolute;
-                            font-size: 18px;
-                            color: #070707;
-                            top: 0;
-                        }
-                        .input {
-                            height: 60px;
-                            padding-left: 15px;
-                            position: relative;
-                            [dir="rtl"] & {
-                                padding-left: 0;
-                                padding-right: 15px;
-                            }
-                            &::placeholder {
-                                color: #b5b5b5;
-                            }
-                        }
-                        .id {
-                            display: flex;
-                            align-items: center;
-                            margin-bottom: 20px;
-                            figure {
-                                margin-right: 30px;
-                                [dir="rtl"] & {
-                                    margin-right: 0;
-                                    margin-left: 30px;
-                                }
-                                &:last-child {
-                                    margin-right: 0;
-                                }
-                            }
-                        }
-                        .id-no {
-                            background: #f5f5f5;
+                        &::placeholder {
+                            color: #b5b5b5;
                         }
                     }
-                    .two-fields {
+                    .id {
                         display: flex;
-                        .field {
-                            margin-right: 29px;
+                        align-items: center;
+                        margin-bottom: 20px;
+                        figure {
+                            margin-right: 30px;
                             [dir="rtl"] & {
                                 margin-right: 0;
-                                margin-left: 29px;
+                                margin-left: 30px;
                             }
-                            flex: 1;
                             &:last-child {
                                 margin-right: 0;
                             }
                         }
                     }
+                    .id-no {
+                        background: #f5f5f5;
+                    }
                 }
-                .preference {
-                    flex: 1;
-                    padding-left: 40px;
-                    [dir="rtl"] & {
-                        padding: 0;
-                    }
-                    @media all and (max-width: 768px) {
-                        padding-left: 0;
-                        padding-top: 25px;
-                    }
-                    h4 {
-                        padding-bottom: 20px;
-                    }
-                    >div {
-                        margin-bottom: 22px;
-                         :last-child {
-                            margin-bottom: 0;
+                .two-fields {
+                    display: flex;
+                    .field {
+                        margin-right: 29px;
+                        [dir="rtl"] & {
+                            margin-right: 0;
+                            margin-left: 29px;
+                        }
+                        flex: 1;
+                        &:last-child {
+                            margin-right: 0;
                         }
                     }
-                    .btn {
-                        font-size: 24px;
+                }
+            }
+            .preference {
+                flex: 1;
+                padding-left: 40px;
+                [dir="rtl"] & {
+                    padding: 0;
+                }
+                @media all and (max-width: 768px) {
+                    padding-left: 0;
+                    padding-top: 25px;
+                }
+                h4 {
+                    padding-bottom: 20px;
+                }
+                >div {
+                    margin-bottom: 22px;
+                     :last-child {
+                        margin-bottom: 0;
                     }
-                    .img-section {
-                        .content {
-                            background: #f5f5f5;
-                            border-radius: 6px;
+                }
+                .btn {
+                    font-size: 24px;
+                }
+                .img-section {
+                    .content {
+                        background: #f5f5f5;
+                        border-radius: 6px;
+                        display: flex;
+                        .profile-img {
+                            img {
+                                width: 100px;
+                                height: 100px;
+                            }
+                        }
+                        .changeable {
                             display: flex;
-                            .profile-img {
-                                img {
-                                    width: 100px;
-                                    height: 100px;
-                                }
+                            align-items: center;
+                            margin-left: auto;
+                            [dir="rtl"] & {
+                                margin-right: auto;
+                                margin-left: 20px;
                             }
-                            .changeable {
-                                display: flex;
-                                align-items: center;
-                                margin-left: auto;
-                                [dir="rtl"] & {
-                                    margin-right: auto;
-                                    margin-left: 20px;
-                                }
-                                .fileUpload {
-                                    overflow: hidden;
-                                    position: relative;
-                                    cursor: pointer;
-                                }
-                                .fileUpload input.upload {
-                                    position: absolute;
-                                    top: 0;
-                                    right: 0;
-                                    margin: 0;
-                                    padding: 0;
-                                    font-size: 20px;
-                                    cursor: pointer;
-                                    opacity: 0;
-                                    filter: alpha(opacity=0);
-                                    height: 100px;
-                                    width: 100px;
-                                    cursor: pointer;
-                                }
-                                input[type="file"] {
-                                    position: fixed;
-                                    right: 100%;
-                                    bottom: 100%;
-                                }
-                                .btn {
-                                    width: 146px;
-                                    background: white;
-                                    margin-right: 20px;
-                                }
+                            .fileUpload {
+                                overflow: hidden;
+                                position: relative;
+                                cursor: pointer;
+                            }
+                            .fileUpload input.upload {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                margin: 0;
+                                padding: 0;
+                                font-size: 20px;
+                                cursor: pointer;
+                                opacity: 0;
+                                filter: alpha(opacity=0);
+                                height: 100px;
+                                width: 100px;
+                                cursor: pointer;
+                            }
+                            input[type="file"] {
+                                position: fixed;
+                                right: 100%;
+                                bottom: 100%;
+                            }
+                            .btn {
+                                width: 146px;
+                                margin-right: 20px;
                             }
                         }
                     }
-                    .card {
-                        .content {
-                            .saved-cards {
-                                background: #f5f5f5;
-                                padding: 30px 20px;
-                                border-radius: 6px;
-                                .field {
-                                    margin-bottom: 20px;
-                                    position: relative;
-                                    background: white;
-                                    .btn {
-                                        position: absolute;
-                                        top: 0;
-                                        right: 0;
-                                        width: 133px;
-                                        [dir="rtl"] & {
-                                            right: auto;
-                                            left: 0;
-                                        }
-                                    }
-                                    .input {
-                                        padding: 18px 15px;
-                                    }
-                                }
-                                .outline-btn {
-                                    width: 321px;
-                                }
-                            }
-                        }
-                    }
-                    .address {
-                        .content {
+                }
+                .card {
+                    .content {
+                        .saved-cards {
+                            background: #f5f5f5;
+                            padding: 30px 20px;
+                            border-radius: 6px;
                             .field {
                                 margin-bottom: 20px;
                                 position: relative;
@@ -234,87 +207,200 @@
                                     top: 0;
                                     right: 0;
                                     width: 133px;
-                                    [dir="rtl"] & {
-                                        right: auto;
-                                        left: 0;
-                                    }
+                                    padding: 32px 0;
                                 }
                                 .input {
                                     padding: 18px 15px;
                                 }
                             }
-                        }
-                    }
-                    .content {
-                        margin-top: 8px;
-                    }
-                    span {
-                        font-size: 18px;
-                        font-weight: 300;
-                        color: #070707;
-                        margin-bottom: 10px;
-                    }
-                    .reset {
-                        .btn {
-                            width: 267px;
+                            .outline-btn {
+                                width: 321px;
+                            }
                         }
                     }
                 }
-                table,
+                .address {
+                    .content {
+                        .field {
+                            margin-bottom: 20px;
+                            position: relative;
+                            background: white;
+                            .btn {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                width: 133px;
+                                padding: 32px 0;
+                                [dir="rtl"] & {
+                                    right: auto;
+                                    left: 0;
+                                }
+                            }
+                            .input {
+                                padding: 18px 15px;
+                            }
+                        }
+                    }
+                }
+                .content {
+                    margin-top: 8px;
+                }
+                span {
+                    font-size: 18px;
+                    font-weight: 300;
+                    color: #070707;
+                    margin-bottom: 10px;
+                }
+                .reset {
+                    .btn {
+                        width: 267px;
+                    }
+                }
+            }
+            table,
+            th,
+            td {
+                padding: 10px 15px;
+                height: 50px;
+                font-size: 18px;
+            }
+            table {
+                border-spacing: 0;
+                width: 100%;
+                border-collapse: collapse;
+                border-radius: 6px;
                 th,
                 td {
-                    padding: 10px 15px;
-                    height: 50px;
-                    font-size: 18px;
+                    border: 1px solid #cccccc;
+                    padding-bottom: 12px;
                 }
-                table {
-                    border-spacing: 0;
-                    width: 100%;
-                    border-collapse: collapse;
-                    border-radius: 6px;
-                    th,
-                    td {
-                        border: 1px solid #cccccc;
-                        padding-bottom: 12px;
-                    }
-                    th {
-                        color: #a1a1a1;
-                    }
-                    #primaryColor {
-                        color: $primaryColor;
-                    }
-                    .has-background {
-                        background: #f5f5f5;
-                    }
-                    .action {
-                        display: flex;
-                        align-items: center;
-                        figure {
-                            margin-right: 30px;
-                        }
+                th {
+                    color: #a1a1a1;
+                }
+                #primaryColor {
+                    color: $primaryColor;
+                }
+                .has-background {
+                    background: #f5f5f5;
+                }
+                .action {
+                    display: flex;
+                    align-items: center;
+                    figure {
+                        margin-right: 30px;
                     }
                 }
             }
         }
-        #Tab2 {
-            .details {
-                display: block;
-                .cards2 {
+    }
+    #Tab2 {
+        .details {
+            display: block;
+            .cards2 {
+                display: flex;
+                align-items: center;
+                @media all and (max-width: 768px) {
+                    display: block;
+                }
+                .card2 {
+                    background: #f5f5f5;
+                    border-radius: 6px;
                     display: flex;
                     align-items: center;
+                    height: 85px;
+                    flex: 1;
+                    margin-right: 40px;
+                    padding: 0 20px;
+                    width: 100%;
+                    [dir="rtl"] & {
+                        margin-right: 0;
+                        margin-left: 40px;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    .card-content {
+                        padding-left: 22px;
+                        [dir="rtl"] & {
+                            padding-left: 0;
+                            padding-right: 22px;
+                        }
+                        h5 {
+                            color: #a1a1a1;
+                            font-size: 20px;
+                            font-weight: 300;
+                        }
+                        span {
+                            font-size: 20px;
+                            color: $primaryColor;
+                        }
+                    }
+                    @media all and (max-width: 768px) {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            .vertical-tabs {
+                padding-top: 60px;
+                #vertical_tab_nav {
+                    display: flex;
+                    overflow: hidden;
                     @media all and (max-width: 768px) {
                         display: block;
                     }
-                    .card2 {
-                        background: #f5f5f5;
+                }
+                #vertical_tab_nav {
+                    .vertical-links {
+                        display: block;
+                        border: 1px solid #d4d4d4;
                         border-radius: 6px;
-                        display: flex;
-                        align-items: center;
-                        height: 85px;
+                        width: 325px;
+                        height: 100%;
                         flex: 1;
+                        .link {
+                            a {
+                                display: block;
+                                padding: 15px 18px;
+                                color: #090909;
+                                transition: 0.3s;
+                                font-size: 20px;
+                            }
+                        }
+                        @media all and (max-width: 768px) {
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            text-align: center;
+                            .link {
+                                flex: 1;
+                            }
+                        }
+                    }
+                }
+                #vertical_tab_nav .link a.selected {
+                    background: #f5f5f5;
+                    color: $primaryColor;
+                }
+                #vertical_tab_nav div .content {
+                    display: none;
+                    color: #000;
+                    font-size: 18px;
+                    @media all and (max-width: 768px) {
+                        margin-top: 25px;
+                    }
+                }
+                .balance {
+                    display: flex;
+                    margin-left: 40px;
+                    [dir="rtl"] & {
+                        margin-left: 0;
                         margin-right: 40px;
-                        padding: 0 20px;
-                        width: 100%;
+                    }
+                    @media all and (max-width: 768px) {
+                        display: block;
+                    }
+                    >div {
+                        margin-right: 40px;
                         [dir="rtl"] & {
                             margin-right: 0;
                             margin-left: 40px;
@@ -322,238 +408,148 @@
                         &:last-child {
                             margin-right: 0;
                         }
-                        .card-content {
-                            padding-left: 22px;
-                            [dir="rtl"] & {
-                                padding-left: 0;
-                                padding-right: 22px;
-                            }
-                            h5 {
-                                color: #a1a1a1;
-                                font-size: 20px;
-                                font-weight: 300;
-                            }
-                            span {
-                                font-size: 20px;
-                                color: $primaryColor;
-                            }
-                        }
-                        @media all and (max-width: 768px) {
-                            margin-bottom: 15px;
-                        }
                     }
-                }
-                .vertical-tabs {
-                    padding-top: 60px;
-                    #vertical_tab_nav {
-                        display: flex;
-                        overflow: hidden;
-                        @media all and (max-width: 768px) {
-                            display: block;
-                        }
-                    }
-                    #vertical_tab_nav {
-                        .vertical-links {
-                            display: block;
-                            border: 1px solid #d4d4d4;
-                            border-radius: 6px;
-                            width: 325px;
-                            height: 100%;
-                            flex: 1;
-                            .link {
-                                a {
-                                    display: block;
-                                    padding: 15px 18px;
-                                    color: #090909;
-                                    transition: 0.3s;
-                                    font-size: 20px;
-                                }
-                            }
-                            @media all and (max-width: 768px) {
+                    .goals {
+                        .chart {
+                            display: flex;
+                            align-items: center;
+                            background: #f5f5f5;
+                            padding: 29px;
+                            margin-top: 20px;
+                            .product {
                                 display: flex;
                                 align-items: center;
-                                width: 100%;
-                                text-align: center;
-                                .link {
-                                    flex: 1;
-                                }
-                            }
-                        }
-                    }
-                    #vertical_tab_nav .link a.selected {
-                        background: #f5f5f5;
-                        color: $primaryColor;
-                    }
-                    #vertical_tab_nav div .content {
-                        display: none;
-                        color: #000;
-                        font-size: 18px;
-                        @media all and (max-width: 768px) {
-                            margin-top: 25px;
-                        }
-                    }
-                    .balance {
-                        display: flex;
-                        margin-left: 40px;
-                        [dir="rtl"] & {
-                            margin-left: 0;
-                            margin-right: 40px;
-                        }
-                        @media all and (max-width: 768px) {
-                            display: block;
-                        }
-                        >div {
-                            margin-right: 40px;
-                            [dir="rtl"] & {
-                                margin-right: 0;
-                                margin-left: 40px;
-                            }
-                            &:last-child {
-                                margin-right: 0;
-                            }
-                        }
-                        .goals {
-                            .chart {
-                                display: flex;
-                                align-items: center;
-                                background: #f5f5f5;
-                                padding: 29px;
-                                margin-top: 20px;
-                                .product {
-                                    display: flex;
-                                    align-items: center;
-                                    .remains {
-                                        margin-left: 6px;
-                                        [dir="rtl"] & {
-                                            margin-right: 6px;
-                                            margin-left: 0;
-                                        }
-                                        span {
-                                            font-size: 24px;
-                                            color: $primaryColor;
-                                        }
-                                        p {
-                                            color: #000000;
-                                            font-size: 16px;
-                                            padding-top: 6px;
-                                        }
-                                    }
-                                }
-                                .pie-chart {
-                                    position: relative;
-                                    flex: 1;
-                                    margin-left: auto;
+                                .remains {
                                     margin-left: 6px;
-                                    span {
-                                        position: absolute;
-                                        top: 50%;
-                                        right: 10%;
-                                        color: white;
-                                        font-size: 25px;
-                                    }
-                                }
-                            }
-                        }
-                        .certifications {
-                            .grid-item {
-                                figure {
-                                    img {
-                                        height: 230px;
-                                        width: 325px;
-                                    }
-                                }
-                            }
-                        }
-                        .store {
-                            .block-head {
-                                display: flex;
-                                align-items: center;
-                                h4 {
-                                    padding-bottom: 8px;
-                                }
-                                .btn {
-                                    width: 152px;
-                                    margin-left: auto;
-                                    font-size: 20px;
-                                    height: 45px;
-                                    margin-top: 8px;
                                     [dir="rtl"] & {
-                                        margin-right: auto;
+                                        margin-right: 6px;
                                         margin-left: 0;
                                     }
-                                }
-                            }
-                            .grid-container {
-                                grid-gap: 60px 0;
-                                .grid-item {
-                                    text-align: center;
                                     span {
                                         font-size: 24px;
-                                        color: #a1a1a1;
+                                        color: $primaryColor;
                                     }
-                                    .btn {
-                                        width: 157px;
-                                        margin: 15px auto;
-                                        font-size: 30px;
+                                    p {
+                                        color: #000000;
+                                        font-size: 16px;
+                                        padding-top: 6px;
                                     }
+                                }
+                            }
+                            .pie-chart {
+                                position: relative;
+                                flex: 1;
+                                margin-left: auto;
+                                margin-left: 6px;
+                                span {
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 10%;
+                                    color: white;
+                                    font-size: 25px;
                                 }
                             }
                         }
-                        #certificate_popup {
-                            .container {
-                                max-width: 321px;
-                                padding: 0;
+                    }
+                    .certifications {
+                        .grid-item {
+                            figure {
+                                img {
+                                    height: 230px;
+                                    width: 325px;
+                                }
                             }
-                            h2 {
-                                font-size: 40px;
-                                font-weight: 600;
-                                color: $primaryColor;
+                        }
+                    }
+                    .store {
+                        .block-head {
+                            display: flex;
+                            align-items: center;
+                            h4 {
+                                padding-bottom: 8px;
                             }
-                            .popup_contain {
-                                width: 1197px;
-                                height: 717px;
-                                padding: 50px 70px 70px;
-                                .grid-container {
-                                    display: grid;
-                                    grid-gap: 40px;
-                                    grid-template-columns: auto auto auto;
-                                    padding-top: 40px;
-                                    .grid-item {
-                                        .products-details {
-                                            padding: 0;
-                                            .details {
+                            .btn {
+                                width: 152px;
+                                margin-left: auto;
+                                font-size: 20px;
+                                height: 45px;
+                                margin-top: 8px;
+                                [dir="rtl"] & {
+                                    margin-right: auto;
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                        .grid-container {
+                            grid-gap: 60px 0;
+                            .grid-item {
+                                text-align: center;
+                                span {
+                                    font-size: 24px;
+                                    color: #a1a1a1;
+                                }
+                                .btn {
+                                    width: 157px;
+                                    margin: 15px auto;
+                                    font-size: 30px;
+                                }
+                            }
+                        }
+                    }
+                    #certificate_popup {
+                        .container {
+                            max-width: 321px;
+                            padding: 0;
+                        }
+                        h2 {
+                            font-size: 40px;
+                            font-weight: 600;
+                            color: $primaryColor;
+                        }
+                        .popup_contain {
+                            width: 1197px;
+                            height: 717px;
+                            padding: 50px 70px 70px;
+                            .grid-container {
+                                display: grid;
+                                grid-gap: 40px;
+                                grid-template-columns: auto auto auto;
+                                padding-top: 40px;
+                                .grid-item {
+                                    .products-details {
+                                        padding: 0;
+                                        .details {
+                                            margin: 0;
+                                            figure {
                                                 margin: 0;
-                                                figure {
-                                                    margin: 0;
-                                                    img {
-                                                        width: 321px;
-                                                    }
+                                                img {
+                                                    width: 321px;
                                                 }
-                                                .certification-head {
-                                                    margin-bottom: 0;
-                                                    .input {
-                                                        font-size: 15px;
-                                                    }
-                                                    label {
-                                                        font-size: 10px;
-                                                    }
+                                            }
+                                            .certification-head {
+                                                margin-bottom: 0;
+                                                .input {
+                                                    font-size: 15px;
                                                 }
-                                                .certification-body {
-                                                    .grid-container {
-                                                        padding-top: 15px;
-                                                        .grid-item {
-                                                            position: relative;
-                                                            label {
-                                                                color: #a1a1a1;
-                                                                position: absolute;
-                                                                font-size: 5px;
-                                                            }
-                                                            span {
-                                                                font-size: 5px;
-                                                            }
-                                                            .input {
-                                                                font-size: 6px;
-                                                            }
+                                                label {
+                                                    font-size: 10px;
+                                                }
+                                            }
+                                            .certification-body {
+                                                .grid-container {
+                                                    padding-top: 15px;
+                                                    .grid-item {
+                                                        position: relative;
+                                                        label {
+                                                            color: #a1a1a1;
+                                                            position: absolute;
+                                                            font-size: 5px;
+                                                        }
+                                                        span {
+                                                            font-size: 5px;
+                                                        }
+                                                        .input {
+                                                            font-size: 6px;
                                                         }
                                                     }
                                                 }
@@ -563,208 +559,257 @@
                                 }
                             }
                         }
-                        .wallet-content {
-                            .fields {
-                                .list {
-                                    display: flex;
+                    }
+                    .wallet-content {
+                        .fields {
+                            .list {
+                                display: flex;
+                                align-items: center;
+                                .dropdown {
+                                    width: 430px;
+                                    border: 1px solid #bfbfbf;
+                                    border-radius: 6px;
+                                    height: 60px;
+                                    padding-left: 15px;
                                     align-items: center;
-                                    .dropdown {
-                                        width: 430px;
-                                        border: 1px solid #bfbfbf;
-                                        border-radius: 6px;
-                                        height: 60px;
-                                        padding-left: 15px;
-                                        align-items: center;
-                                        color: $primaryColor;
-                                        font-size: 20px;
-                                        [dir="rtl"] & {
-                                            padding-left: 0;
-                                            padding-right: 15px;
-                                        }
-                                        [dir="rtl"] & {
-                                            background: url(../images/card-arrow.svg) no-repeat left 13px center;
-                                        }
+                                    color: $primaryColor;
+                                    font-size: 20px;
+                                    [dir="rtl"] & {
+                                        padding-left: 0;
+                                        padding-right: 15px;
                                     }
-                                    .btn {
-                                        margin: 0;
-                                        margin-left: auto;
-                                        width: 231px;
-                                        margin-left: 18px;
-                                        font-size: 24px;
-                                        [dir="rtl"] & {
-                                            margin-right: 18px;
-                                            margin-left: 0;
-                                        }
+                                    [dir="rtl"] & {
+                                        background: url(../images/card-arrow.svg) no-repeat left 13px center;
                                     }
                                 }
-                                .field {
-                                    &:last-child {
-                                        padding-bottom: 0;
+                                .btn {
+                                    margin: 0;
+                                    margin-left: auto;
+                                    width: 231px;
+                                    margin-left: 18px;
+                                    font-size: 24px;
+                                    [dir="rtl"] & {
+                                        margin-right: 18px;
+                                        margin-left: 0;
                                     }
-                                    label {
-                                        position: absolute;
-                                        font-size: 18px;
-                                        color: #070707;
-                                        top: 0;
+                                }
+                            }
+                            .field {
+                                &:last-child {
+                                    padding-bottom: 0;
+                                }
+                                label {
+                                    position: absolute;
+                                    font-size: 18px;
+                                    color: #070707;
+                                    top: 0;
+                                }
+                                .sub-label {
+                                    font-size: 18px;
+                                    top: 0;
+                                    color: #a1a1a1;
+                                    right: 0;
+                                }
+                                .input {
+                                    height: 60px;
+                                    padding-left: 15px;
+                                    position: relative;
+                                    &::placeholder {
+                                        color: #b5b5b5;
                                     }
-                                    .sub-label {
-                                        font-size: 18px;
-                                        top: 0;
-                                        color: #a1a1a1;
-                                        right: 0;
-                                    }
-                                    .input {
-                                        height: 60px;
-                                        padding-left: 15px;
-                                        position: relative;
-                                        &::placeholder {
-                                            color: #b5b5b5;
-                                        }
-                                    }
-                                    span {
-                                        position: absolute;
-                                        right: 20px;
-                                        font-size: 20px;
-                                        font-weight: 300;
-                                        top: 45px;
-                                        [dir="rtl"] & {
-                                            left: 15px;
-                                            right: auto;
-                                        }
+                                }
+                                span {
+                                    position: absolute;
+                                    right: 20px;
+                                    font-size: 20px;
+                                    font-weight: 300;
+                                    top: 45px;
+                                    [dir="rtl"] & {
+                                        left: 15px;
+                                        right: auto;
                                     }
                                 }
                             }
                         }
-                        .points {
-                            h4 {
-                                padding-bottom: 8px;
-                            }
-                            .btn {
-                                width: 157px;
-                                margin: 0 auto;
-                                font-size: 20px;
-                                height: 60px;
-                                margin-top: 8px;
-                            }
-                            .gifts {
-                                .grid-container {
-                                    display: grid;
-                                    grid-template-columns: auto auto;
-                                    grid-gap: 0 30px;
+                    }
+                    .points {
+                        h4 {
+                            padding-bottom: 8px;
+                        }
+                        .btn {
+                            width: 157px;
+                            margin: 0 auto;
+                            font-size: 20px;
+                            height: 60px;
+                            margin-top: 8px;
+                        }
+                        .gifts {
+                            .grid-container {
+                                display: grid;
+                                grid-template-columns: auto auto;
+                                grid-gap: 0 30px;
+                                padding-top: 20px;
+                                .details {
                                     padding-top: 20px;
-                                    .details {
-                                        padding-top: 20px;
-                                        text-align: center;
-                                    }
+                                    text-align: center;
                                 }
                             }
                         }
                     }
-                    .total-balance {
-                        flex: 1;
-                        width: 325px;
-                        @media all and (max-width: 768px) {
-                            margin-top: 25px;
+                }
+                .total-balance {
+                    flex: 1;
+                    width: 325px;
+                    @media all and (max-width: 768px) {
+                        margin-top: 25px;
+                    }
+                    .balance-details {
+                        text-align: center;
+                        border: 1px solid #bfbfbf;
+                        padding: 20px;
+                        border-radius: 6px;
+                        margin-top: 20px;
+                        h2 {
+                            font-size: 40px;
+                            font-weight: 600;
+                            color: $primaryColor;
+                            padding-bottom: 10px;
                         }
-                        .balance-details {
-                            text-align: center;
-                            border: 1px solid #bfbfbf;
-                            padding: 20px;
-                            border-radius: 6px;
-                            margin-top: 20px;
-                            h2 {
-                                font-size: 40px;
-                                font-weight: 600;
-                                color: $primaryColor;
-                                padding-bottom: 10px;
-                            }
-                            span {
-                                font-size: 18px;
-                                font-weight: 300;
-                                color: $greyTextColor;
-                            }
+                        span {
+                            font-size: 18px;
+                            font-weight: 300;
+                            color: $greyTextColor;
                         }
-                        .btn.minus {
-                            margin-top: 7px;
-                            margin-bottom: 0;
-                        }
-                        .btn.blue-btn {
-                            margin-bottom: 20px;
-                            font-size: 24px;
-                        }
+                    }
+                    .btn.minus {
+                        margin-top: 7px;
+                        margin-bottom: 0;
+                    }
+                    .btn.blue-btn {
+                        margin-bottom: 20px;
+                        font-size: 24px;
                     }
                 }
             }
         }
     }
-    
-    .addcard-popup {
-        .two-fields {
-            display: flex;
-            .field {
-                margin-right: 29px;
-                margin-bottom: 10px;
-                position: relative;
-            }
-        }
-        label {
-            position: absolute;
-            font-size: 18px;
-            color: #070707;
-            top: -33px;
-            font-weight: 300;
-        }
-        .sub-label {
-            font-size: 18px;
-            top: -33px;
-            color: #a1a1a1;
-            right: 0;
-            position: absolute;
-        }
-        .input {
-            height: 60px;
-            padding-left: 15px;
+}
+
+.addcard-popup {
+    .two-fields {
+        display: flex;
+        .field {
+            margin-right: 29px;
+            margin-bottom: 10px;
             position: relative;
-            &::placeholder {
-                color: #b5b5b5;
-            }
         }
-        .three-fields {
-            padding-top: 50px;
-            .date {
-                label {
-                    top: -33px;
-                }
-            }
+    }
+    label {
+        position: absolute;
+        font-size: 18px;
+        color: #070707;
+        top: -33px;
+        font-weight: 300;
+    }
+    .sub-label {
+        font-size: 18px;
+        top: -33px;
+        color: #a1a1a1;
+        right: 0;
+        position: absolute;
+    }
+    .input {
+        height: 60px;
+        padding-left: 15px;
+        position: relative;
+        &::placeholder {
+            color: #b5b5b5;
         }
-        .buttons {
-            align-items: unset;
-            .btn {
-                margin-left: 10px;
+    }
+    .three-fields {
+        padding-top: 50px;
+        .date {
+            label {
+                top: -33px;
             }
         }
     }
-    
-    // .list {
-    //     display: flex;
-    //     .dropdown {
-    //         width: 325px;
-    //         border: 1px solid #bfbfbf;
-    //         border-radius: 6px;
-    //         height: 60px;
-    //         padding-left: 15px;
-    //         align-items: center;
-    //         color: $primaryColor;
-    //         font-size: 20px;
-    //         flex: 1;
-    //         [dir="rtl"] & {
-    //             background: url(../images/card-arrow.svg) no-repeat left 13px center;
-    //         }
+    .buttons {
+        align-items: unset;
+        .btn {
+            margin-left: 10px;
+        }
+    }
+    // .quantity {
+    //     margin-left: auto;
+    //     text-align: right;
+    //     [dir="rtl"] & {
+    //         margin-right: auto;
+    //         margin-left: 0;
     //     }
-    //     .btn {
+    //     @media all and (max-width: 375px) {
     //         margin: 0;
-    //         width: 231px;
-    //         margin-left: 18px;
+    //         text-align: left;
+    //     }
+    //     .red-btn {
+    //         width: 134px;
+    //         margin: inherit;
+    //         margin-top: 20px;
     //         font-size: 24px;
     //     }
+    //     .quantity-control {
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: space-between;
+    //         width: fit-content;
+    //         margin: 0 auto;
+    //         border: 1px solid $primaryColor;
+    //         border-radius: 6px;
+    //         width: 152px;
+    //         height: 45px;
+    //         margin-bottom: 20px;
+    //         @media all and (max-width: 375px) {
+    //             margin: 0;
+    //             margin-top: 15px;
+    //             margin-bottom: 15px;
+    //         }
+    //     }
+    //     .quantity-btn {
+    //         background: transparent;
+    //         border: none;
+    //         outline: none;
+    //         margin: 0;
+    //         padding: 0px 15px;
+    //         cursor: pointer;
+    //     }
+    //     .quantity-btn svg {
+    //         width: 15px;
+    //         height: 15px;
+    //         fill: $primaryColor;
+    //     }
     // }
+}
+
+.list {
+    display: flex;
+    .dropdown {
+        width: 325px;
+        border: 1px solid #bfbfbf;
+        border-radius: 6px;
+        height: 60px;
+        padding-left: 15px;
+        align-items: center;
+        color: $primaryColor;
+        font-size: 20px;
+        flex: 1;
+        [dir="rtl"] & {
+            background: url(../images/card-arrow.svg) no-repeat left 13px center;
+        }
+    }
+    .btn {
+        margin: 0;
+        width: 231px;
+        margin-left: 18px;
+        font-size: 24px;
+    }
+}
