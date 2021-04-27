@@ -44,29 +44,6 @@ main {
             left: 50%;
             transform: translate(50%, -50%);
         }
-        @media all and (max-width: 768px) {
-            .container {
-                transform: translate(-50%, -50%);
-                width: 650px;
-            }
-        }
-        @media all and (max-width: 375px) {
-            .container {
-                transform: translate(-50%, -50%);
-                width: 350px;
-                p {
-                    font-size: 20px;
-                    max-width: 400px;
-                }
-                .subtitle {
-                    font-size: 30px;
-                    max-width: 300px;
-                }
-                .btn {
-                    margin-top: 30px;
-                }
-            }
-        }
     }
     .products {
         text-align: center;
@@ -75,9 +52,6 @@ main {
             display: grid;
             grid-gap: 40px;
             grid-template-columns: auto auto auto auto;
-            @media all and (max-width: 375px) {
-                grid-template-columns: auto;
-            }
             padding: 60px 0;
             .grid-item {
                 position: relative;
@@ -85,13 +59,6 @@ main {
                     position: absolute;
                     right: 20px;
                     bottom: 100px;
-                    @media all and (max-width: 768px) {
-                        right: 46px;
-                        bottom: 90px;
-                    }
-                    @media all and (max-width: 375px) {
-                        right: 43px;
-                    }
                 }
                 a {
                     img {

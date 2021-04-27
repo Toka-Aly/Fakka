@@ -54,21 +54,4 @@
             }
         }
     }
-    @media all and (max-width: 768px) {
-        .container {
-            transform: translate(-35%, -50%);
-        }
-    }
-    @media all and (max-width: 375px) {
-        .container {
-            transform: translate(-50%, -50%);
-            width: 400px;
-            p {
-                font-size: 25px;
-            }
-            .title {
-                font-size: 45px;
-            }
-        }
-    }
 }

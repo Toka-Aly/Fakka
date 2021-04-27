@@ -112,9 +112,6 @@ a {
     .container {
         display: flex;
         align-items: center;
-        @media all and (max-width: 375px) {
-            display: block;
-        }
         svg {
             height: 23px;
             width: 23px;

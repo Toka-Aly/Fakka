@@ -53,19 +53,4 @@ footer {
             }
         }
     }
-    @media all and (max-width: 375px) {
-        .columns {
-            display: block;
-            >div {
-                margin-bottom: 15px;
-            }
-        }
-        .copyrights {
-            display: block;
-            padding-top: 50px;
-            p {
-                margin-bottom: 15px;
-            }
-        }
-    }
 }
