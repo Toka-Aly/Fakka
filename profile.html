@@ -14,36 +14,34 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="scss/custom.css">
-    <!-- <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/arabic rtl.css"> -->
 </head>
 
 <body>
     <div class="topbar">
         <div class="container">
             <div class="social">
-                <a href="">
+                <a href="#">
                     <figure>
                         <svg viewBox="0 0 23.469 23.469">
                             <use xlink:href="images/sprite.svg#fb"></use>
                         </svg>
                     </figure>
                 </a>
-                <a href="">
+                <a href="#">
                     <figure>
-                        <svg viewBox="0 0 23.075 23.075">
-                            <use xlink:href="images/sprite.svg#linkedin"></use>
+                        <svg viewBox="0 0 23.075 23.075 ">
+                            <use xlink:href="images/sprite.svg#linkedin "></use>
                         </svg>
                     </figure>
                 </a>
-                <a href="">
+                <a href="#">
                     <figure>
                         <svg viewBox="0 0 23.1 23.1">
                             <use xlink:href="images/sprite.svg#insta"></use>
                         </svg>
                     </figure>
                 </a>
-                <a href="">
+                <a href="#">
                     <figure>
                         <svg viewBox="0 0 32.999 23">
                             <use xlink:href="images/sprite.svg#youtube"></use>
@@ -53,33 +51,32 @@
             </div>
             <div class="right-side">
                 <div class="language">
-                    <select name="" id="" class="dropdown">
-                        <option value="">
+                    <select class="dropdown">
+                        <option>
                             Language
                         </option>
-                        <option value="">
+                        <option>
                             AR
                         </option>
-                        <option value="">
+                        <option>
                             EN
                         </option>
                     </select>
                 </div>
                 <div class="login">
-                    <a href="http://127.0.0.1:5500/register.html">
+                    <a href="http://127.0.0.1:5503/sign-in.html">
                         Login / register
                     </a>
                 </div>
-
             </div>
         </div>
     </div>
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark">
-                <a href="#">
+                <a href="http://127.0.0.1:5503/">
                     <figure>
-                        <img src="images/logo.png" alt="">
+                        <img src="images/logo.png">
                     </figure>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -88,46 +85,43 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="http://127.0.0.1:5503/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our Products</a>
+                            <a class="nav-link" href="http://127.0.0.1:5503/our-products.html">Our Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="http://127.0.0.1:5503/about-us.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="http://127.0.0.1:5503/contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="menu-area cart">
+                            <a href="http://127.0.0.1:5503/shopping-cart.html" class="menu" id="menu" onclick="showDropdownMenu()">
+                                <figure>
+                                    <svg viewBox="0 0 22.5 20.622">
+                                        <use xlink:href="images/sprite.svg#add-to-cart"></use>
+                                    </svg>
+                                </figure>
+                                <span class="count">10</span> cart
+                            </a>
                         </li>
                     </ul>
                 </div>
-                <div class="menu-area cart">
-                    <a class="menu" id="menu" onclick="showDropdownMenu() ">
-                        <figure>
-                            <svg viewBox="0 0 22.5 20.622">
-                                <use xlink:href="images/sprite.svg#add-to-cart"></use>
-                            </svg>
-                        </figure>
-                        <span class="count">10</span> cart
-                    </a>
-
-                </div>
             </nav>
-
         </div>
     </header>
     <main>
-        <div class="background-title">
-            <figure>
-                <img src="images/shopping-bg.svg" alt="">
-            </figure>
-            <div class="title">
-                <h2>
-                    Profile
-                </h2>
+        <div class="background-title profile">
+            <div class="container">
+                <div class="title">
+                    <h2>
+                        Profile
+                    </h2>
+                </div>
             </div>
         </div>
         <div class="tabs-form">
@@ -1791,7 +1785,7 @@
                 <p>
                     To answer all your questions
                 </p>
-                <a href="#" class="white-btn">
+                <a href="http://127.0.0.1:5503/contact-us.html" class="white-btn">
                     Contact us
                 </a>
             </div>

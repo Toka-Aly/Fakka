@@ -174,10 +174,6 @@ a {
   z-index: 0;
 }
 
-.background-title figure {
-  margin: 0;
-}
-
 .background-title .title {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -531,8 +527,17 @@ header {
 }
 
 .red-btn {
+  border: 1px solid transparent;
   background: #e62727;
   color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.red-btn:hover {
+  border: 1px solid #E62727;
+  color: #e62727;
+  background: none;
 }
 
 .buttons {
@@ -1371,140 +1376,6 @@ main .contact h2 {
   padding: 0;
 }
 
-.virtual-gold .accordion {
-  text-align: left;
-  padding-top: 30px;
-}
-
-.virtual-gold .accordion .accordion-section {
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.virtual-gold .accordion .accordion-section:last-child {
-  margin-bottom: 0;
-}
-
-.virtual-gold .accordion .accordion-section .title {
-  color: #015cab;
-  background: #f5f5f5;
-  border: 1px solid #bfbfbf;
-  padding: 18px 0;
-  padding-left: 65px;
-  position: relative;
-  border-radius: 10px;
-}
-
-.virtual-gold .accordion .accordion-section .title h3 {
-  font-size: 20px;
-  font-weight: 300;
-  margin: 0;
-}
-
-.virtual-gold .accordion .accordion-section .title::before {
-  content: "";
-  background: none;
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  border: 2px solid #707070;
-  border-radius: 50%;
-  top: 16px;
-  left: 20px;
-}
-
-[dir="rtl"] .virtual-gold .accordion .accordion-section .title::before {
-  right: 20px;
-  left: 0;
-}
-
-.virtual-gold .accordion .accordion-section .title.active::after {
-  content: "";
-  display: block;
-  background: #015CAB;
-  width: 11px;
-  height: 11px;
-  position: absolute;
-  border-radius: 50%;
-  top: 21px;
-  left: 25px;
-}
-
-[dir="rtl"] .virtual-gold .accordion .accordion-section .title.active::after {
-  right: 25px;
-  left: 0;
-}
-
-.virtual-gold .accordion .accordion-section .add {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-[dir="rtl"] .virtual-gold .accordion .accordion-section .add {
-  right: auto;
-  left: 0;
-}
-
-.virtual-gold .accordion .accordion-section .add .btn {
-  width: 163px;
-  font-size: 18px;
-  background: white;
-  padding: 30px 0;
-  border-radius: 10px;
-  color: #015CAB;
-  font-weight: 300;
-}
-
-.virtual-gold .accordion .accordion-section .list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.virtual-gold .accordion .accordion-section .list .dropdown {
-  width: 430px;
-  border: 1px solid #bfbfbf;
-  border-radius: 6px;
-  height: 60px;
-  padding-left: 15px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #015CAB;
-  font-size: 20px;
-}
-
-[dir="rtl"] .virtual-gold .accordion .accordion-section .list .dropdown {
-  background: url(../images/card-arrow.svg) no-repeat left 13px center;
-  padding-left: 0;
-  padding-right: 15px;
-}
-
-[dir="rtl"] .virtual-gold .accordion .accordion-section .list .dropdown {
-  margin-left: 0;
-}
-
-.virtual-gold .accordion .accordion-section .list .btn {
-  margin: 0;
-  margin-left: auto;
-  width: 231px;
-  margin-left: 18px;
-  font-size: 24px;
-}
-
-[dir="rtl"] .virtual-gold .accordion .accordion-section .list .btn {
-  margin-left: 0;
-  margin-right: 18px;
-}
-
-.virtual-gold .accordion .accordion-section:not(:first-of-type) .content {
-  display: none;
-}
-
 .virtual-gold .tabs .tab {
   display: none;
 }
@@ -1683,10 +1554,6 @@ main .contact h2 {
   font-weight: 700;
 }
 
-.virtual-gold .tabs .tab .buttons .btn.balance {
-  width: 233px;
-}
-
 .virtual-gold .tabs .tab h4 {
   color: #015CAB;
   font-size: 24px;
@@ -1756,7 +1623,7 @@ main .contact h2 {
 }
 
 .virtual-gold .tabs .tab .details .certificate .item .certification-info .certification-head .input {
-  color: #015CAB;
+  color: #015cab;
   font-size: 58px;
 }
 
@@ -1769,11 +1636,11 @@ main .contact h2 {
 .virtual-gold .tabs .tab .details .certificate .item .certification-info .certification-body span,
 .virtual-gold .tabs .tab .details .certificate .item .certification-info .certification-body label {
   font-size: 16px;
-  color: #A1A1A1;
+  color: #a1a1a1;
 }
 
 .virtual-gold .tabs .tab .details .certificate .item .certification-info .certification-body .input {
-  color: #015CAB;
+  color: #015cab;
   font-size: 27px;
 }
 
@@ -1842,6 +1709,11 @@ main .contact h2 {
   min-height: calc(100vh - 120px);
 }
 
+.register h2 {
+  font-size: 82px;
+  font-weight: 700;
+}
+
 [dir="rtl"] .register {
   text-align: right;
 }
@@ -1895,8 +1767,33 @@ main .contact h2 {
 
 .register .container .register-body {
   z-index: 2;
-  overflow: auto;
   max-height: 100%;
+  overflow: auto;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.register .container .register-body .register-content {
+  height: 437px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.register .container .register-body ::-webkit-scrollbar {
+  width: 10px;
+}
+
+.register .container .register-body ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.register .container .register-body ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.register .container .register-body ::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .register .container .register-body .fields .two-fields {
@@ -1908,20 +1805,13 @@ main .contact h2 {
 
 .register .container .register-body .fields .two-fields .field {
   margin-right: 20px;
-}
-
-[dir="rtl"] .register .container .register-body .fields .two-fields .field {
-  margin-left: 20px;
-  margin-right: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .register .container .register-body .fields .two-fields .field:last-child {
-  margin-right: 0;
-}
-
-[dir="rtl"] .register .container .register-body .fields .two-fields .field:last-child {
-  margin-right: 15px;
-  margin-left: 0;
+  margin: 0;
 }
 
 .register .container .register-body .fields .field {
@@ -2489,6 +2379,8 @@ main .contact h2 {
 }
 
 .sign-in .container .sign-body .title h2 {
+  font-weight: 700;
+  font-size: 82px;
   color: #015CAB;
 }
 
@@ -2565,13 +2457,19 @@ main .contact h2 {
   font-size: 24px;
 }
 
-.sign-in .container .sign-body a {
+.sign-in .container .sign-body .forgetpass {
   font-size: 20px;
   color: #015CAB;
 }
 
 .contact-us {
   min-height: calc(100vh - 120px);
+}
+
+.contact-us h2 {
+  font-size: 82px;
+  font-weight: 700;
+  color: #015cab;
 }
 
 .contact-us::after {
@@ -2649,10 +2547,6 @@ main .contact h2 {
   padding-bottom: 26px;
 }
 
-.contact-us .container .contact-body .title h2 {
-  color: #015CAB;
-}
-
 .contact-us .container .contact-body .title p {
   color: #a1a1a1;
   font-size: 18px;
@@ -2685,10 +2579,8 @@ main .contact h2 {
   color: #a1a1a1;
 }
 
-.contact-us .container .contact-body .fields .big .input {
-  padding: 0 15px;
-  height: 160px;
-  padding-bottom: 20%;
+.contact-us .container .contact-body .fields .field .input.textarea {
+  padding: 20px 15px;
 }
 
 .contact-us .container .btn.blue-btn {
@@ -2799,6 +2691,109 @@ main .contact h2 {
 
 .shopping-cart .container .cart-items .items .item .item-details .info .grid-container p span {
   color: black;
+}
+
+.shopping-cart .container .quantity {
+  text-align: right;
+  margin-left: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopping-cart .container .quantity .quantity-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  width: 133px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+@media all and (max-width: 768px) {
+  .shopping-cart .container .quantity {
+    margin: 0;
+    margin-top: 15px;
+  }
+  .shopping-cart .container .quantity .quantity-control {
+    margin: 0;
+  }
+}
+
+.shopping-cart .container .quantity .quantity-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0px 15px;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.shopping-cart .container .quantity .quantity-btn:last-child {
+  border-bottom: 0;
+}
+
+.shopping-cart .container .quantity .plus svg {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.shopping-cart .container .quantity .buttons .button {
+  background: none;
+}
+
+.shopping-cart .container .quantity .quantity-btn svg {
+  width: 15px;
+  height: 24px;
+  fill: #015CAB;
+}
+
+.shopping-cart .container .quantity .quantity-input {
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  width: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: transparent;
+  border: none;
+  color: #015cab;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.shopping-cart .container .quantity .quantity-input::-webkit-inner-spin-button,
+.shopping-cart .container .quantity .quantity-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.shopping-cart .container .red-btn {
+  font-size: 24px;
+  margin-top: 15px;
 }
 
 .checkout {
@@ -3635,6 +3630,10 @@ main .contact h2 {
           transform: rotateX(180deg);
 }
 
+.products-details .heading .right-side .quantity .buttons .button {
+  background: none;
+}
+
 .products-details .heading .right-side .quantity .quantity-btn svg {
   width: 15px;
   height: 24px;
@@ -3771,7 +3770,7 @@ main .contact h2 {
 }
 
 .products-details .details .item .certification-info .certification-head .input {
-  color: #015CAB;
+  color: #015cab;
   font-size: 58px;
 }
 
@@ -3784,11 +3783,11 @@ main .contact h2 {
 .products-details .details .item .certification-info .certification-body span,
 .products-details .details .item .certification-info .certification-body label {
   font-size: 16px;
-  color: #A1A1A1;
+  color: #a1a1a1;
 }
 
 .products-details .details .item .certification-info .certification-body .input {
-  color: #015CAB;
+  color: #015cab;
   font-size: 27px;
 }
 
@@ -4000,7 +3999,7 @@ main .contact h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  top: 20px;
+  top: 30px;
   right: 0;
   border-left: 1px solid #bfbfbf;
   height: 60px;
@@ -4175,6 +4174,160 @@ main .contact h2 {
 .min {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.accordion {
+  text-align: left;
+  padding-top: 30px;
+}
+
+.accordion .accordion-section {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.accordion .accordion-section:last-child {
+  margin-bottom: 0;
+}
+
+.accordion .accordion-section .title {
+  color: #015cab;
+  background: #f5f5f5;
+  border: 1px solid #bfbfbf;
+  padding: 18px 0;
+  padding-left: 65px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.accordion .accordion-section .title h3 {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.accordion .accordion-section .title::before {
+  content: "";
+  background: none;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  border: 2px solid #707070;
+  border-radius: 50%;
+  top: 16px;
+  left: 20px;
+}
+
+[dir="rtl"] .accordion .accordion-section .title::before {
+  right: 20px;
+  left: 0;
+}
+
+.accordion .accordion-section .title.active::after {
+  content: "";
+  display: block;
+  background: #015CAB;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  border-radius: 50%;
+  top: 21px;
+  left: 25px;
+}
+
+[dir="rtl"] .accordion .accordion-section .title.active::after {
+  right: 25px;
+  left: 0;
+}
+
+.accordion .accordion-section .add {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+[dir="rtl"] .accordion .accordion-section .add {
+  right: auto;
+  left: 0;
+}
+
+.accordion .accordion-section .add .btn {
+  width: 163px;
+  font-size: 18px;
+  background: white;
+  padding: 30px 0;
+  border-radius: 10px;
+  color: #015CAB;
+  font-weight: 300;
+}
+
+.accordion .accordion-section .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accordion .accordion-section .list .dropdown {
+  width: 430px;
+  border: 1px solid #bfbfbf;
+  border-radius: 6px;
+  height: 60px;
+  padding-left: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #015CAB;
+  font-size: 20px;
+}
+
+[dir="rtl"] .accordion .accordion-section .list .dropdown {
+  background: url(../images/card-arrow.svg) no-repeat left 13px center;
+  padding-left: 0;
+  padding-right: 15px;
+}
+
+[dir="rtl"] .accordion .accordion-section .list .dropdown {
+  margin-left: 0;
+}
+
+.accordion .accordion-section .list .btn {
+  margin: 0;
+  margin-left: auto;
+  width: 231px;
+  margin-left: 18px;
+  font-size: 24px;
+}
+
+[dir="rtl"] .accordion .accordion-section .list .btn {
+  margin-left: 0;
+  margin-right: 18px;
+}
+
+.accordion .accordion-section:not(:first-of-type) .content {
+  display: none;
+}
+
+.profile {
+  background-image: -webkit-gradient(linear, left top, right top, from(#015CAB), color-stop(#015CAB), color-stop(#015CAB), to(#015CAB00));
+  background-image: linear-gradient(to right, #015CAB, #015CAB, #015CAB, #015CAB00);
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile .title {
+  text-align: left;
 }
 
 .grid-container {
@@ -5084,7 +5237,6 @@ main .contact h2 {
 }
 
 .tabs-contents #Tab2 .details .vertical-tabs .total-balance .btn.minus {
-  margin-top: 7px;
   margin-bottom: 0;
 }
 

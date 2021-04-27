@@ -17,32 +17,32 @@
     <link rel="stylesheet" href="css/arabic rtl.css"> -->
 </head>
 
-<body dir="rtl">
+<body>
     <div class="topbar">
         <div class="container">
             <div class="social">
-                <a href="">
+                <a href="#">
                     <figure>
                         <svg viewBox="0 0 23.469 23.469">
                             <use xlink:href="images/sprite.svg#fb"></use>
                         </svg>
                     </figure>
                 </a>
-                <a href="">
+                <a href="#">
                     <figure>
-                        <svg viewBox="0 0 23.075 23.075">
-                            <use xlink:href="images/sprite.svg#linkedin"></use>
+                        <svg viewBox="0 0 23.075 23.075 ">
+                            <use xlink:href="images/sprite.svg#linkedin "></use>
                         </svg>
                     </figure>
                 </a>
-                <a href="">
+                <a href="#">
                     <figure>
                         <svg viewBox="0 0 23.1 23.1">
                             <use xlink:href="images/sprite.svg#insta"></use>
                         </svg>
                     </figure>
                 </a>
-                <a href="">
+                <a href="#">
                     <figure>
                         <svg viewBox="0 0 32.999 23">
                             <use xlink:href="images/sprite.svg#youtube"></use>
@@ -52,33 +52,32 @@
             </div>
             <div class="right-side">
                 <div class="language">
-                    <select name="" id="" class="dropdown">
-                        <option value="">
+                    <select class="dropdown">
+                        <option>
                             Language
                         </option>
-                        <option value="">
+                        <option>
                             AR
                         </option>
-                        <option value="">
+                        <option>
                             EN
                         </option>
                     </select>
                 </div>
                 <div class="login">
-                    <a href="http://127.0.0.1:5500/register.html">
+                    <a href="http://127.0.0.1:5503/sign-in.html">
                         Login / register
                     </a>
                 </div>
-
             </div>
         </div>
     </div>
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark">
-                <a href="#">
+                <a href="http://127.0.0.1:5503/">
                     <figure>
-                        <img src="images/logo.png" alt="">
+                        <img src="images/logo.png">
                     </figure>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -87,35 +86,33 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="http://127.0.0.1:5503/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our Products</a>
+                            <a class="nav-link" href="http://127.0.0.1:5503/our-products.html">Our Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="http://127.0.0.1:5503/about-us.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="http://127.0.0.1:5503/contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="menu-area cart">
+                            <a href="http://127.0.0.1:5503/shopping-cart.html" class="menu" id="menu" onclick="showDropdownMenu()">
+                                <figure>
+                                    <svg viewBox="0 0 22.5 20.622">
+                                        <use xlink:href="images/sprite.svg#add-to-cart"></use>
+                                    </svg>
+                                </figure>
+                                <span class="count">10</span> cart
+                            </a>
                         </li>
                     </ul>
                 </div>
-                <div class="menu-area cart">
-                    <a class="menu" id="menu" onclick="showDropdownMenu() ">
-                        <figure>
-                            <svg viewBox="0 0 22.5 20.622">
-                                <use xlink:href="images/sprite.svg#add-to-cart"></use>
-                            </svg>
-                        </figure>
-                        <span class="count">10</span> cart
-                    </a>
-
-                </div>
             </nav>
-
         </div>
     </header>
     <main>
@@ -151,7 +148,7 @@
                                 </div>
                             </div>
                             <div>
-                                <a href="" class="btn blue-btn">
+                                <a href="#" class="btn blue-btn">
                                     Add to cart
                                 </a>
                             </div>
@@ -159,9 +156,9 @@
                     </div>
                     <div class="details">
                         <div class="item">
-                            <div class="products-img">
+                            <div>
                                 <figure>
-                                    <img src="images/2.jpeg " alt=" ">
+                                    <img src="images/gold-ingot.png" alt=" ">
                                 </figure>
                             </div>
                             <div class="product-info">
@@ -255,11 +252,54 @@
                             See also
                         </h3>
                         <div class="grid-container">
-
                             <div class="grid-item ">
-                                <a href="# " class="products-img ">
+                                <a href="http://127.0.0.1:5503/product-details.html">
                                     <figure>
-                                        <img src="images/2.jpeg " alt=" ">
+                                        <img src="images/gold-ingot.png">
+                                    </figure>
+                                </a>
+                                <div class="details ">
+                                    <div class="gold-name ">
+                                        <h4>
+                                            10 gram BTC Gold 24k
+                                        </h4>
+                                        <span>
+                                            9000 EGP
+                                        </span>
+                                    </div>
+                                    <button class="cart-btn light-background">
+                                        <figure>
+                                            <img src="images/add-to-cart (arrow).svg">
+                                        </figure>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <a href="http://127.0.0.1:5503/product-details.html">
+                                    <figure>
+                                        <img src="images/gold-coin.png">
+                                    </figure>
+                                </a>
+                                <div class="details">
+                                    <div class="gold-name">
+                                        <h4>
+                                            10 gram BTC Gold 24k
+                                        </h4>
+                                        <span>
+                                            9000 EGP
+                                        </span>
+                                    </div>
+                                    <button class="cart-btn light-background">
+                                        <figure>
+                                            <img src="images/add-to-cart (arrow).svg">
+                                        </figure>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <a href="http://127.0.0.1:5503/product-details.html">
+                                    <figure>
+                                        <img src="images/gold-coin.png">
                                     </figure>
                                 </a>
                                 <div class="details ">
@@ -278,54 +318,10 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="grid-item ">
-                                <a href="# " class="products-img ">
+                            <div class="grid-item">
+                                <a href="http://127.0.0.1:5503/product-details.html">
                                     <figure>
-                                        <img src="images/3.jpeg " alt=" ">
-                                    </figure>
-                                </a>
-                                <div class="details ">
-                                    <div class="gold-name ">
-                                        <h4>
-                                            10 gram BTC Gold 24k
-                                        </h4>
-                                        <span>
-                                            9000 EGP
-                                        </span>
-                                    </div>
-                                    <button class="cart-btn light-background ">
-                                        <figure class=" ">
-                                            <img src="images/add-to-cart (arrow).svg " alt=" ">
-                                        </figure>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="grid-item ">
-                                <a href="# " class="products-img ">
-                                    <figure>
-                                        <img src="images/gold-coin.png" alt=" ">
-                                    </figure>
-                                </a>
-                                <div class="details ">
-                                    <div class="gold-name ">
-                                        <h4>
-                                            10 gram BTC Gold 24k
-                                        </h4>
-                                        <span>
-                                            9000 EGP
-                                        </span>
-                                    </div>
-                                    <button class="cart-btn light-background ">
-                                        <figure class=" ">
-                                            <img src="images/add-to-cart (arrow).svg " alt=" ">
-                                        </figure>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="grid-item ">
-                                <a href="# " class="products-img ">
-                                    <figure>
-                                        <img src="images/5.jpeg " alt=" ">
+                                        <img src="images/gold-coin.png">
                                     </figure>
                                 </a>
                                 <div class="details ">
@@ -360,7 +356,7 @@
                 <p>
                     To answer all your questions
                 </p>
-                <a href="">
+                <a href="http://127.0.0.1:5503/contact-us.html" class="white-btn">
                     Contact us
                 </a>
             </div>
@@ -371,20 +367,20 @@
             <div class="columns">
                 <div class="logo">
                     <figure>
-                        <img src="images/footer.png" alt="">
+                        <img src="images/footer.png">
                     </figure>
                 </div>
                 <div>
                     <h4>Categories</h4>
                     <ul>
                         <li>
-                            <a href="">Ingots</a>
+                            <a href="#">Ingots</a>
                         </li>
                         <li>
-                            <a href="">Coins</a>
+                            <a href="#">Coins</a>
                         </li>
                         <li>
-                            <a href="">Bars</a>
+                            <a href="#">Bars</a>
                         </li>
                     </ul>
                 </div>
@@ -392,42 +388,41 @@
                     <h4>Contact info</h4>
                     <ul>
                         <li>
-                            <a href="">Management: +3727124420</a>
+                            <a href="#">Management: +3727124420</a>
                         </li>
                         <li>
-                            <a href="">Support: +201007890373</a>
+                            <a href="#">Support: +201007890373</a>
                         </li>
                         <li>
-                            <a href="">Email: info@fakka.org</a>
+                            <a href="#">Email: info@fakka.org</a>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <h4>Social media</h4>
                     <div class="social">
-
-                        <a href="">
+                        <a href="#">
                             <figure>
                                 <svg viewBox="0 0 23.469 23.469">
                                     <use xlink:href="images/sprite.svg#fb"></use>
                                 </svg>
                             </figure>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <figure>
                                 <svg viewBox="0 0 23.075 23.075">
                                     <use xlink:href="images/sprite.svg#linkedin"></use>
                                 </svg>
                             </figure>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <figure>
                                 <svg viewBox="0 0 23.1 23.1">
                                     <use xlink:href="images/sprite.svg#insta"></use>
                                 </svg>
                             </figure>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <figure>
                                 <svg viewBox="0 0 32.999 23">
                                     <use xlink:href="images/sprite.svg#youtube"></use>
@@ -442,10 +437,10 @@
                     @ Copyright 2019 - 2020 | Fakka.org by Fakka OU | All rights reserved | Powered transglobal llc
                 </p>
                 <div>
-                    <a href="">
+                    <a href="#">
                         Terms and Conditions
                     </a>
-                    <a href="">
+                    <a href="#">
                         Privacy policy
                     </a>
                 </div>
