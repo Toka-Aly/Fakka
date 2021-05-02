@@ -81,7 +81,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   zoom: 0.9;
-  padding-top: 180px;
+  padding-top: 174px;
 }
 
 [dir="rtl"] body {
@@ -715,10 +715,6 @@ header {
   margin-right: 15px;
 }
 
-.navbar-collapse .navbar-nav .nav-item {
-  margin-bottom: 15px;
-}
-
 main {
   text-align: center;
 }
@@ -796,10 +792,10 @@ main .products .grid-container .grid-item {
   position: relative;
 }
 
-main .products .grid-container .grid-item .position-absolute {
+main .products .grid-container .grid-item .cart-btn {
   position: absolute;
-  right: 20px;
-  bottom: 100px;
+  right: 27px;
+  bottom: 92px;
 }
 
 main .products .grid-container .grid-item a img {
@@ -990,6 +986,7 @@ main .contact a {
   padding: 14px 44px;
   border-radius: 5px;
   font-size: 24px;
+  text-decoration: none;
 }
 
 main .contact h2 {
@@ -1115,8 +1112,8 @@ main .contact h2 {
 .has-sidebar .container .has-sidebarcontent .sidebar .checkbox form label .checkmark:after {
   left: 7px;
   top: 3px;
-  width: 5px;
-  height: 10px;
+  width: 7px;
+  height: 13px;
   border: solid white;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
@@ -1892,8 +1889,8 @@ main .contact h2 {
 .register .container .register-body .terms label .checkmark:after {
   left: 7px;
   top: 3px;
-  width: 5px;
-  height: 10px;
+  width: 7px;
+  height: 13px;
   border: solid white;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
@@ -1913,13 +1910,14 @@ main .contact h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 24px;
 }
 
 .register .container .register-body .buttons .btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .register .container .register-body .buttons .btn.blue-btn {
@@ -2375,7 +2373,6 @@ main .contact h2 {
 
 .sign-in .container .sign-body .password .btn.blue-btn {
   width: 305px;
-  font-size: px;
 }
 
 .sign-in .container .sign-body .reset .btn.blue-btn {
@@ -2846,12 +2843,12 @@ main .contact h2 {
   content: "";
   display: block;
   background: #015cab;
-  width: 11px;
-  height: 11px;
+  width: 15px;
+  height: 15px;
   position: absolute;
   border-radius: 50%;
   top: 30px;
-  left: 25px;
+  left: 35px;
 }
 
 [dir="rtl"] .confirm-payment .container .payment-tabs .field label input:checked + span::after {
@@ -2882,13 +2879,13 @@ main .contact h2 {
   content: "";
   background: none;
   position: absolute;
-  width: 21px;
-  height: 21px;
+  width: 25px;
+  height: 25px;
   border: 2px solid #707070;
   border-radius: 50%;
   background: transparent;
   top: 25px;
-  left: 20px;
+  left: 30px;
 }
 
 [dir="rtl"] .confirm-payment .container .payment-tabs .field label span:before {
@@ -3617,14 +3614,14 @@ main .contact h2 {
   }
 }
 
-.products-details .details {
+.products-details .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 116px;
 }
 
-.products-details .details .item {
+.products-details .content .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3635,30 +3632,30 @@ main .contact h2 {
 }
 
 @media all and (max-width: 375px) {
-  .products-details .details .item {
+  .products-details .content .item {
     display: block;
   }
 }
 
-.products-details .details .item figure {
+.products-details .content .item figure {
   margin-right: 40px;
 }
 
-[dir="rtl"] .products-details .details .item figure {
+[dir="rtl"] .products-details .content .item figure {
   margin-right: 40;
   margin-left: 40px;
 }
 
-.products-details .details .item .describe p {
+.products-details .content .item .describe p {
   max-width: 616px;
   padding-top: 20px;
 }
 
-.products-details .details .item .grid {
+.products-details .content .item .grid {
   margin-top: 46px;
 }
 
-.products-details .details .item .grid .grid-container {
+.products-details .content .item .grid .grid-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto;
@@ -3666,19 +3663,19 @@ main .contact h2 {
   grid-gap: 10px 30px;
 }
 
-.products-details .details .item .grid .grid-container p {
+.products-details .content .item .grid .grid-container p {
   color: #a1a1a1;
 }
 
-.products-details .details .item .grid .grid-container p span {
+.products-details .content .item .grid .grid-container p span {
   color: #000000;
 }
 
-.products-details .details .item p {
+.products-details .content .item p {
   font-size: 20px;
 }
 
-.products-details .details .item .certification-info {
+.products-details .content .item .certification-info {
   position: absolute;
   left: 40%;
   top: 50%;
@@ -3686,49 +3683,49 @@ main .contact h2 {
           transform: translate(-50%, -50%);
 }
 
-.products-details .details .item .certification-info .certification-head {
+.products-details .content .item .certification-info .certification-head {
   margin-bottom: 81px;
 }
 
-.products-details .details .item .certification-info .certification-head label {
+.products-details .content .item .certification-info .certification-head label {
   font-size: 18px;
   color: #a1a1a1;
 }
 
-.products-details .details .item .certification-info .certification-head .input {
+.products-details .content .item .certification-info .certification-head .input {
   color: #015cab;
   font-size: 58px;
 }
 
-.products-details .details .item .certification-info .certification-body .grid-container {
+.products-details .content .item .certification-info .certification-body .grid-container {
   display: -ms-grid;
   display: grid;
   grid-gap: 64px;
 }
 
-.products-details .details .item .certification-info .certification-body span,
-.products-details .details .item .certification-info .certification-body label {
+.products-details .content .item .certification-info .certification-body span,
+.products-details .content .item .certification-info .certification-body label {
   font-size: 16px;
   color: #a1a1a1;
 }
 
-.products-details .details .item .certification-info .certification-body .input {
+.products-details .content .item .certification-info .certification-body .input {
   color: #015cab;
   font-size: 27px;
 }
 
-.products-details .details .right-side {
+.products-details .content .right-side {
   margin-left: auto;
 }
 
-.products-details .details .right-side .info {
+.products-details .content .right-side .info {
   background: #f5f5f5;
   width: 346px;
   height: 138px;
   border-radius: 6px;
 }
 
-.products-details .details .right-side p {
+.products-details .content .right-side p {
   border-bottom: 1px solid #d4d4d4;
   padding: 23px 20px;
   color: #a1a1a1;
@@ -3744,22 +3741,22 @@ main .contact h2 {
           justify-content: center;
 }
 
-.products-details .details .right-side p:last-child {
+.products-details .content .right-side p:last-child {
   border-bottom: 0;
 }
 
-.products-details .details .right-side p span {
+.products-details .content .right-side p span {
   color: #015CAB;
   margin-left: auto;
   margin-right: 40px;
 }
 
-[dir="rtl"] .products-details .details .right-side p span {
+[dir="rtl"] .products-details .content .right-side p span {
   margin-left: 0;
   margin-right: auto;
 }
 
-.products-details .details .certification {
+.products-details .content .certification {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3768,20 +3765,20 @@ main .contact h2 {
           align-items: center;
 }
 
-.products-details .details .certification .item-info {
+.products-details .content .certification .item-info {
   font-size: 20px;
   padding-left: 9px;
 }
 
-.products-details .details .certification .item-info h4 {
+.products-details .content .certification .item-info h4 {
   color: #015CAB;
 }
 
-.products-details .details .certification .item-info span {
+.products-details .content .certification .item-info span {
   color: #a1a1a1;
 }
 
-.products-details .details .buttons .btn {
+.products-details .content .buttons .btn {
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3797,37 +3794,37 @@ main .contact h2 {
   height: 45px;
 }
 
-[dir="rtl"] .products-details .details .buttons .btn {
+[dir="rtl"] .products-details .content .buttons .btn {
   margin-right: 0;
   margin-left: 19px;
 }
 
-.products-details .details .buttons .btn:last-child {
+.products-details .content .buttons .btn:last-child {
   margin-right: 0;
 }
 
-.products-details .details .buttons .btn figure {
+.products-details .content .buttons .btn figure {
   padding-right: 10px;
 }
 
-[dir="rtl"] .products-details .details .buttons .btn figure {
+[dir="rtl"] .products-details .content .buttons .btn figure {
   padding-right: 0;
   padding-left: 10px;
 }
 
-.products-details .details .buttons .download {
+.products-details .content .buttons .download {
   width: 193px;
 }
 
-.products-details .details .buttons .print {
+.products-details .content .buttons .print {
   width: 134px;
 }
 
 @media all and (max-width: 768px) {
-  .products-details .details {
+  .products-details .content {
     display: block;
   }
-  .products-details .details .right-side {
+  .products-details .content .right-side {
     margin-top: 30px;
   }
 }
@@ -4136,11 +4133,12 @@ main .contact h2 {
   content: "";
   background: none;
   position: absolute;
-  width: 21px;
-  height: 21px;
+  width: 25px;
+  height: 25px;
   border: 2px solid #707070;
   border-radius: 50%;
-  top: 16px;
+  background: transparent;
+  top: 23px;
   left: 20px;
 }
 
@@ -4152,12 +4150,12 @@ main .contact h2 {
 .accordion .accordion-section .title.active::after {
   content: "";
   display: block;
-  background: #015CAB;
-  width: 11px;
-  height: 11px;
+  background: #015cab;
+  width: 15px;
+  height: 15px;
   position: absolute;
   border-radius: 50%;
-  top: 21px;
+  top: 28px;
   left: 25px;
 }
 
@@ -4181,7 +4179,7 @@ main .contact h2 {
   width: 163px;
   font-size: 18px;
   background: white;
-  padding: 30px 0;
+  padding: 32px 0;
   border-radius: 10px;
   color: #015CAB;
   font-weight: 300;

@@ -55,10 +55,10 @@ main {
             padding: 60px 0;
             .grid-item {
                 position: relative;
-                .position-absolute {
+                .cart-btn {
                     position: absolute;
-                    right: 20px;
-                    bottom: 100px;
+                    right: 27px;
+                    bottom: 92px;
                 }
                 a {
                     img {
@@ -223,6 +223,7 @@ main {
             padding: 14px 44px;
             border-radius: 5px;
             font-size: 24px;
+            text-decoration: none;
         }
         h2 {
             font-size: 82px;
@@ -320,8 +321,8 @@ main {
                         label .checkmark:after {
                             left: 7px;
                             top: 3px;
-                            width: 5px;
-                            height: 10px;
+                            width: 7px;
+                            height: 13px;
                             border: solid white;
                             border-width: 0 3px 3px 0;
                             -webkit-transform: rotate(45deg);
@@ -899,8 +900,8 @@ main {
                 label .checkmark:after {
                     left: 7px;
                     top: 3px;
-                    width: 5px;
-                    height: 10px;
+                    width: 7px;
+                    height: 13px;
                     border: solid white;
                     border-width: 0 3px 3px 0;
                     -webkit-transform: rotate(45deg);
@@ -916,9 +917,10 @@ main {
                 margin-top: 30px;
                 display: flex;
                 align-items: center;
-                font-size: 24px;
                 .btn {
                     justify-content: center;
+                    font-size: 24px;
+                    font-weight: 600;
                     &.blue-btn {
                         width: 184px;
                         margin-right: 20px;
@@ -1203,7 +1205,6 @@ main {
                     justify-content: center;
                     &.blue-btn {
                         width: 305px;
-                        font-size: px;
                     }
                 }
             }
@@ -1550,12 +1551,12 @@ main {
                                 content: "";
                                 display: block;
                                 background: #015cab;
-                                width: 11px;
-                                height: 11px;
+                                width: 15px;
+                                height: 15px;
                                 position: absolute;
                                 border-radius: 50%;
                                 top: 30px;
-                                left: 25px;
+                                left: 35px;
                                 [dir="rtl"] & {
                                     right: 25px;
                                     left: 0;
@@ -1582,13 +1583,13 @@ main {
                             content: "";
                             background: none;
                             position: absolute;
-                            width: 21px;
-                            height: 21px;
+                            width: 25px;
+                            height: 25px;
                             border: 2px solid #707070;
                             border-radius: 50%;
                             background: transparent;
                             top: 25px;
-                            left: 20px;
+                            left: 30px;
                             [dir="rtl"] & {
                                 right: 20px;
                                 left: 0;
@@ -2110,7 +2111,7 @@ main {
             }
         }
     }
-    .details {
+    .content {
         display: flex;
         margin-bottom: 116px;
         .item {
@@ -2513,11 +2514,12 @@ main {
                 content: "";
                 background: none;
                 position: absolute;
-                width: 21px;
-                height: 21px;
+                width: 25px;
+                height: 25px;
                 border: 2px solid #707070;
                 border-radius: 50%;
-                top: 16px;
+                background: transparent;
+                top: 23px;
                 left: 20px;
                 [dir="rtl"] & {
                     right: 20px;
@@ -2528,12 +2530,12 @@ main {
         .title.active::after {
             content: "";
             display: block;
-            background: $primaryColor;
-            width: 11px;
-            height: 11px;
+            background: #015cab;
+            width: 15px;
+            height: 15px;
             position: absolute;
             border-radius: 50%;
-            top: 21px;
+            top: 28px;
             left: 25px;
             [dir="rtl"] & {
                 right: 25px;
@@ -2552,7 +2554,7 @@ main {
                 width: 163px;
                 font-size: 18px;
                 background: white;
-                padding: 30px 0;
+                padding: 32px 0;
                 border-radius: 10px;
                 color: $primaryColor;
                 font-weight: 300;
