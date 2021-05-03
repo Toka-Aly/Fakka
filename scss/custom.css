@@ -4179,10 +4179,26 @@ main .contact h2 {
   width: 163px;
   font-size: 18px;
   background: white;
-  padding: 32px 0;
+  padding: 29px 0;
   border-radius: 10px;
   color: #015CAB;
-  font-weight: 300;
+  font-weight: 500;
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.accordion .accordion-section .add .btn:hover {
+  background: none;
+  border: 1px solid #015CAB;
 }
 
 .accordion .accordion-section .list {
